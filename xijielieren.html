@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>仅用于学习-细节猎人</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <style>
+            /* a:hover {
+				background: #ff6000;
+				border-color: #ff6000;
+				color: #fff;
+			} */
+
+            img {
+                width: 100%;
+            }
+
+            #content-list a {
+                margin-right: 15px;
+                margin-bottom: 15px;
+                vertical-align: middle;
+                padding: 4px 8px;
+                background: #fafafa;
+                border-radius: 3px;
+                border: 1px solid #f2f2f2;
+                color: #555;
+                cursor: pointer;
+            }
+
+            #item-left h2 span {
+                font-size: 14px;
+                letter-spacing: 1px;
+                line-height: 1.2;
+                margin-top: -4px;
+                margin-right: 4px;
+                background: #ff5a00;
+                border-color: #ff5a00;
+                color: #fff;
+                padding: 5px 10px;
+            }
+
+            #content h2 {
+                font-size: 20px;
+                color: #393939;
+                font-weight: bold;
+                line-height: 1.1;
+                padding: 0 0 26px;
+                border-bottom: 1px solid #eaeaea;
+                margin: 0 0 45px;
+                position: relative;
+            }
+
+            #six li {
+                float: left;
+                text-align: center;
+                width: 33.3%;
+                background-color: #fff;
+                line-height: 2.1em;
+                border-bottom: 1px solid #cccccc;
+                border-right: 1px solid #cccccc;
+                border: 1px solid #cccccc;
+                padding: 10px;
+            }
+
+            #footer-inner {
+                max-width: 1170px;
+                padding-bottom: 20px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+
+            #footer-inner-block {
+                width: 25%;
+                height: 242px;
+                padding: 0 40px;
+                float: left;
+                position: relative;
+                overflow: hidden;
+                box-sizing: border-box;
+                padding-left: 0px;
+            }
+
+            #footUl {
+                list-style: none;
+                padding-left: 0px;
+            }
+
+            #footUl li {
+                margin: 6px;
+                float: left;
+                text-align: center;
+            }
+
+            #daohang {
+                height: 57px;
+            }
+
+            #daohang li {
+                height: 57px;
+                margin-left: 22px;
+            }
+
+            #daohang li a {
+                height: 57px;
+                padding-top: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="background-color:#f2f2f2;height: 32px;">
+            <div class="container">
+                <ol class="breadcrumb" style="font-size: 11px;background-color: #f2f2f2;">
+                    <li class="active">
+                        欢迎来到吉大设计联盟&nbsp;&nbsp;/&nbsp;&nbsp;<span id="showtime"></span>
+                    </li>
+                </ol>
+                <div style="position: absolute;right: 370px;top: 0;font-size: 11px;">
+                    <ol class="breadcrumb" style="background-color: #f2f2f2;">
+                        <li>
+                            <a href="login.html">请登录</a>
+                        </li>
+                        <li>
+                            <a href="register.html">免费注册</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="header" style="width: 100%;height: 57px; background: #fff;z-index: auto;">
+            <nav class="navbar navbar-default" style="background: #fff;margin-bottom: 0px;height: 57px;">
+                <div class="container" style="height: 57px;">
+                    <div class="navbar-header" style="">
+                        <div style="width: 160px;height: 57px;z-index: 10;display: block;">
+                            <a style="display: block;width: 160px;height: 57px;text-align: center;line-height: 57px;">
+                                <img src="images/background-image/logo.png" style="width: 68px;height: 42px;" />
+                                <font style="font-family: 'Dosis', sans-serif;">吉大设计联盟</font>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <div style="height: 57px;">
+                            <ul class="nav navbar-nav" id="daohang">
+                                <li>
+                                    <a href="index.html">首页</a>
+                                </li>
+                                <li>
+                                    <a href="article.html">文章</a>
+                                </li>
+                                <li>
+                                    <a href="xijielieren.html" style="border-bottom:  5px solid #ff6000;">
+                                        <p style="color: #ff6000;">细节猎人</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="jidadubao.html">吉大读报</a>
+                                </li>
+                                <li>
+                                    <a href="UiiiUiii.html">UiiiUiii课程</a>
+                                </li>
+                                <li>
+                                    <a href="mianfeisucai.html">免费教程</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+        </div>
+        <!-- hunter-header -->
+        <div id="header-container">
+            <div class="container" style="margin-top: 60px;margin-bottom: 40px;">
+                <div class="col-md-4 col-xs-4" id="gg">
+                    <div>
+                        <img src="images/xijielieren/hunterxb-bilibili-banner.jpg" style="width: 100%;">
+                    </div>
+                    <div style="margin-top: 25px;">
+                        <a style="color: black;" href="javacript:;" id="gg-link">
+                            <span id="gg-span" style="border: 1px solid #e1e1e1;padding: 5px 10px;">B站</span>
+                            学会了吗？bilibili
+                            制霸的细节魔力
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4" id="gg-2">
+                    <div>
+                        <img src="images/xijielieren/uisdc-draw-180918.jpg" style="width: 100%;">
+                    </div>
+                    <div style="margin-top: 25px;">
+                        <a style="color: black;line-height: 25px;" href="javacript:;" id="gg-link-2">
+                            <span id="gg-span-2" style="border: 1px solid #e1e1e1;padding: 5px 10px;">广告</span>
+                            第12期零基础AI插画即将开课！从入门到专业（名额有限）
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4" id="gg-3">
+                    <div>
+                        <img src="images/xijielieren/uisdc-hunter-qq-ued.jpg" style="width: 100%;">
+                    </div>
+                    <div style="margin-top: 25px;">
+                        <a style="color: black;" href="javacript:;" id="gg-link-3">
+                            <span id="gg-span-3" style="border: 1px solid #e1e1e1;padding: 5px 10px;">腾讯</span>
+                            企鹅迅猛！腾讯产品的体验究竟好在哪里？
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hunter-part -->
+        <div style="margin-top: 40px;padding: 35px 0;background: url(images/xijielieren/background.jpg);">
+            <div class="container">
+                <h2 style="text-align: center;font-size: 30px;color: #393939;margin-bottom: 20px;">大产品&nbsp;&nbsp;小细节</h2>
+                <h3 style="font-size: 16px;text-align: center;letter-spacing: 2px;">产品无言细节有声 别着急开PS 1分钟小短文揣摩设计真谛</h3>
+                <div style="text-align: center;margin: 25px 0px;">
+                    <a style="background:#fff;padding: 8px 15px;font-size: 16px;color: #393939;border: 1px solid #eaeaea;"
+                        href="javacript:;" id="tdxj">投递细节</a>
+                </div>
+                <div style="margin-bottom: 25px;">
+                    <img src="images/xijielieren/uisdc-cpsj-dkt-0807.jpg" style="width: 100%;" />
+                </div>
+            </div>
+        </div>
+        
+        <div id="content" style="margin-top: 40px;">
+            <div class="container">
+                <!-- hunter-cantainer-left-->
+                <div id="content-left" class="col-md-9 col-xs-9">
+                    <h2>细节列表 <a style="float: right;font-size: 16px;color: #393939;font-weight: normal;">查看更多</a></h2>
+                    <div id="content-list">
+                        <div style="margin-bottom: 50px;">
+                            <div id="item-right" style="float: right;width: 225px;">
+                                <img src="images/xijielieren/xb-yylls-gljh1.jpg" />
+                            </div>
+                            <div id="item-left" style="margin-right: 300px;">
+                                <h2 style="font-size: 20px;font-weight: bold;margin-bottom: 20px;"><span>微交互</span>情绪的调动,
+                                    就靠这些微交互啦～</h2>
+                                <p>玩游戏的时候，如果你通过关卡或挑战成功，页面一般都会出现气氛热烈、冲击力强的视觉效果。「英语流利说」作为一款寓教于乐的英语学习应用，自然也深谙用设计效果调动用户的学习气氛之道。当用户学完一个课时，会出现星星评分的动画。而当完成整个Part，则会出现大大的划</p>
+                                <h4 style="font-size: 12px;color: #777;margin-bottom: 24px;">产品：英语流利说
+                                    &nbsp;&nbsp;&nbsp;iOS 作者：流利说&nbsp;&nbsp;&nbsp;团队 猎人： 小白</h4>
+                                <div>
+                                    <a>
+                                        <i style="color: #f50;">#</i>动画
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>即时反馈
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>微交互
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>情感化设计
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>情绪
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>文案
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 50px;">
+                            <div id="item-right" style="float: right;width: 225px;">
+                                <img src="images/xijielieren/xb-wqrb-yywa3.jpg" />
+                            </div>
+                            <div id="item-left" style="margin-right: 300px;">
+                                <h2 style="font-size: 20px;font-weight: bold;margin-bottom: 20px;"><span>文案</span>不会在「更新日志」里讲故事的运营不是好程序员🐶</h2>
+                                <p>「湾区日报」是一个关注互联网、创业与技术，每天推送5篇高质量英文文章的小众新闻类app。它由一位在美国旧金山创业公司工作的软件工程师用业余时间创立并独立运营，本质更像是一个个人博客。强烈的个人风格不仅体现在产品的设计与内容，也体现在运营的方方面面。每一次产</p>
+                                <h4 style="font-size: 12px;color: #777;margin-bottom: 24px;">产品：湾区日报 iOS
+                                    &nbsp;&nbsp;&nbsp;iOS 作者：湾区日报团队&nbsp;&nbsp;&nbsp;团队 猎人： 小白</h4>
+                                <div>
+                                    <a>
+                                        <i style="color: #f50;">#</i>appstore
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>情感化设计
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>推广运营
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>文案
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>新闻
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>暖心
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 50px;">
+                            <div id="item-right" style="float: right;width: 225px;">
+                                <img src="images/xijielieren/xb-ios-search1.jpg" />
+                            </div>
+                            <div id="item-left" style="margin-right: 300px;">
+                                <h2 style="font-size: 20px;font-weight: bold;margin-bottom: 20px;"><span>用户体验</span>
+                                    iOS搜索栏隐藏的换算功能</h2>
+                                <p>在iPhone首屏向右滑可以快速调出系统的搜索框。其实这个搜索框除了具有常规的搜索定位功能，也是隐藏的单位转换器与计算器。直接在搜索框内输入需要换算的内容如「200英镑」，搜索结果就会直接显示按照实时汇率兑换的人民币金额。如输入简单的运算内容，比如「300+120」，搜索</p>
+                                <h4 style="font-size: 12px;color: #777;margin-bottom: 24px;">产品：iOS系统
+                                    &nbsp;&nbsp;&nbsp;iOS 作者：Apple 设计团队&nbsp;&nbsp;&nbsp;团队 猎人： 小白</h4>
+                                <div>
+                                    <a>
+                                        <i style="color: #f50;">#</i>Apple
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>iOS
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>人性化
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>情景预判
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>搜索
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>易用性
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 50px;">
+                            <div id="item-right" style="float: right;width: 225px;">
+                                <img src="images/xijielieren/xb-ibetter-gly1.jpg" />
+                            </div>
+                            <div id="item-left" style="margin-right: 300px;">
+                                <h2 style="font-size: 20px;font-weight: bold;margin-bottom: 20px;"><span>用户体验</span>冲鸭！「明天也要加油哦」～</h2>
+                                <p>作为一款效率类的应用，iBetter
+                                    会让用户在每次创建一个新项目时写一句鼓励自己的话，给自己完成目标打气。除了可以自己输入鼓励文案，团队还很贴心的为「懒惰」的用户提供了鼓励语模版。点击「写一句话鼓励自己」旁的「换一句」按钮，就可以随机get鼓励文案了。为用户提供自</p>
+                                <h4 style="font-size: 12px;color: #777;margin-bottom: 24px;">产品：iBetter iOS
+                                    &nbsp;&nbsp;&nbsp;iOS 作者：iBetter设计团队&nbsp;&nbsp;&nbsp;团队 猎人： 小白</h4>
+                                <div>
+                                    <a>
+                                        <i style="color: #f50;">#</i>iBetter
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>情感化设计
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>按钮
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>效率
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>文案
+                                    </a>
+                                    <a>
+                                        <i style="color: #f50;">#</i>易用性
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hunter-cantainer-right-->
+                <div id="content-right" class="col-md-3 col-xs-3">
+                    <h2>优设读报<a style="float: right;font-size: 16px;color: #393939;font-weight: normal;">查看更多</a></h2>
+                    <div>
+                        <ul class="list-group" style="margin-top: 5px;margin-bottom:10px;padding: 0;">
+                            <li style="margin-bottom: 5px;font-size: 16px;overflow: hidden;">
+                                <span class="badge">1</span>&nbsp;&nbsp;本周热门文章：《官方揭秘！2018 双十一品牌设计全过程》
+                            </li>
+                            <li style="margin-bottom: 5px;font-size: 16px;overflow: hidden;">
+                                <span class="badge">2</span>&nbsp;&nbsp;本周热门神器：60 套优质 PPT 素材免费打包下载！
+                            </li>
+                            <li style="margin-bottom: 5px;font-size: 16px;overflow: hidden;;">
+                                <span class="badge">3</span>&nbsp;&nbsp;微软完成 75 亿美元收购GitHub 交易
+                            </li>
+                            <li style="margin-bottom: 5px;font-size: 16px;overflow: hidden;">
+                                <span class="badge">4</span>&nbsp;&nbsp;每日人物推荐：回形针PaperClip
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="margin-top: 50px;">
+                        <img src="images/xijielieren/wui-18103-270-250.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div id="footer" style="padding-top: 15px;background-color: #353535; ">
+            <div id="footer-first">
+                <div id="footer-inner">
+                    <div id="footer-inner-block" style="padding-left: 0; ">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">关于我们</h2>
+                        </div>
+                        <div style=" font-size: 12px;line-height: 1.68;list-style: none;padding: 0;margin: 0;color: #8a8a8a; ">
+                            <p>优设网（uisdc.com）是国内人气最高的设计师学习平台。2012年成立至今，一直专注于设计师的学习成长交流。目前正通过网站、微博@优秀网页设计、微信(ID：youshege)、各大社群为设计师提供高水准的行业设计讲座和领先的设计资讯分享。为设计师发声、替好作品说话，是平台的运营理念。想更全面了解优设或联系我们合作，欢迎访问“关于我们”</p>
+                        </div>
+                    </div>
+                    <div id="footer-inner-block">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">我们的团队</h2>
+                        </div>
+                        <div>
+                            <ul id="footUl">
+                                <li>
+                                    <img src="img/team1zp.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team2cz.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team3sl.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team4wz.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team5yy.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team6xl.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team1-xy.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team1-zm.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team9xy.jpg " />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="footer-inner-block">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">大家在关注</h2>
+                        </div>
+                        <div style=" font-size: 12px;line-height: 1.68;list-style: none;color: #8a8a8a; ">
+                            <ul style="list-style: none;padding-left: 0px; ">
+                                <li>经验分享</li>
+                                <li>网页设计</li>
+                                <li>PS教程</li>
+                                <li>酷站</li>
+                                <li>ps技巧</li>
+                                <li>用户体验</li>
+                                <li>优秀网页设计</li>
+                                <li>设计师职场</li>
+                                <li>ui设计</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="footer-inner-block">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">优设微信</h2>
+                        </div>
+                        <div>
+                            <img src="img/2016-gwweixin-bottom.png " />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-two" style="background: black; ">
+                <div id="footer-inner">
+                    <div style="padding: 40px 0 0;text-align: center;">
+                        <p style="margin-bottom: 15px;font-size: 12px; ">广告合作&nbsp;&nbsp;&nbsp;免责声明&nbsp;&nbsp;&nbsp;友情链接&nbsp;&nbsp;&nbsp;联系我们&nbsp;&nbsp;&nbsp;关于我们&nbsp;&nbsp;&nbsp;@优秀网页设计</p>
+                        <p style="font-size: 12px; ">Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2018&nbsp;&nbsp;优设-UISDC&nbsp;&nbsp;-&nbsp;&nbsp;优设网官方微信号：youshege&nbsp;&nbsp;-&nbsp;&nbsp;鄂ICP备16005435号-1</p><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="js/jquery-3.1.1.min.js "></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script>
+        $(function() {
+            $("#gg").mousemove(function(e) {
+                $("#gg-link").css({
+                    "color": "#ff6000",
+                    "text-decoration": "none"
+                });
+                $("#gg-span").css({
+                    "background": "#ff6000",
+                    "color": "white"
+                });
+            });
+            $("#gg").mouseleave(function(e) {
+                $("#gg-link").css("color", "black");
+                $("#gg-span").css({
+                    "background": "#fff",
+                    "color": "black"
+                });
+            });
+            $("#gg-2").mousemove(function(e) {
+                $("#gg-link-2").css({
+                    "color": "#ff6000",
+                    "text-decoration": "none"
+                });
+                $("#gg-span-2").css({
+                    "background": "#ff6000",
+                    "color": "white"
+                });
+            });
+            $("#gg-2").mouseleave(function(e) {
+                $("#gg-link-2").css("color", "black");
+                $("#gg-span-2").css({
+                    "background": "#fff",
+                    "color": "black"
+                });
+            });
+            $("#gg-3").mousemove(function(e) {
+                $("#gg-link-3").css({
+                    "color": "#ff6000",
+                    "text-decoration": "none"
+                });
+                $("#gg-span-3").css({
+                    "background": "#ff6000",
+                    "color": "white"
+                });
+            });
+            $("#gg-3").mouseleave(function(e) {
+                $("#gg-link-3").css("color", "black");
+                $("#gg-span-3").css({
+                    "background": "#fff",
+                    "color": "black"
+                });
+            });
+            $("#tdxj").mousemove(function(e) {
+                $("#tdxj").css({
+                    "color": "#ff6000",
+                    "text-decoration": "none"
+                });
+                $("#tdxj").css({
+                    "background": "#ff6000",
+                    "color": "white"
+                });
+            });
+            $("#tdxj").mouseleave(function(e) {
+                $("#tdxj").css("color", "black");
+                $("#tdxj").css({
+                    "background": "#fff",
+                    "color": "black"
+                });
+            });
+        })
+        $(function() {
+            var time = new Date();
+            var year = time.getFullYear();
+            var month = time.getMonth() + 1;
+            var date = time.getDate();
+            var day = time.getDay();
+            var weeks = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+            var week = weeks[day];
+            var hour = time.getHours();
+            var greet;
+            if (hour >= 0 && hour < 12) {
+                var greet = "早上好";
+            } else if (hour >= 12 && hour < 18) {
+                var greet = "下午好"
+            } else if (hour >= 18 && hour < 24) {
+                var greet = "晚上好"
+            }
+            $("#showtime").html(greet + ",现在是" + year + "年" + month + "月" + date + "日" + " " + week)
+        })
+    </script>
+
+</html>

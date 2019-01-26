@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700'>
+		<link href="http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+		<title>仅用于学习-注册</title>
+	</head>
+
+	<body>
+		<div class="header" style="background:#f8f8f8 url(images/background-image/pattern.jpg); left top repeat">
+			<div class="container">
+				<div class="row" id="header-font">
+					<div class="login col-md-4 col-xs-4">
+						<div style="float: left;">
+							<a href="index.html"><img src="images/background-image/logo.png" /></a>
+						</div>
+						<h1>
+						<a href="index.html">
+							<span>
+								JS
+							</span>
+							UNIVERSTY
+							<p style="font-size: 15px;">union</p>
+						</a>				
+						</h1>
+					</div>
+					<div class="col-md-8 col-xs-8">
+						<div style="width: auto;height: 30px;margin-left: 500px;margin-top: 30px;">
+							已有账号，立即
+							<a href="login.html">登录</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" style="margin-top: 130px;">
+			<div class="row" style="display: none;" id="content-register">
+				<form class="login-from" style="background:#f8f8f8 url(images/background-image/pattern.jpg); left top repeat;width: 570px;margin: auto;">
+					<h2 style="background:url(images/background-image/pencil.png) 70px 6px no-repeat;">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">用户注册</font>
+							</font>
+						</h2>
+					<label for="username">用户名</label>
+					<input type="text" class="form-control" id="name" placeholder="请输入用户名">
+					<label for="username">密码</label>
+					<input type="text" class="form-control" id="password" placeholder="请输入密码">
+					<label for="username">重复输入密码</label>
+					<input type="text" class="form-control" id="repassword" placeholder="请重复输入密码">
+					<label for="username">邮箱</label>
+					<input type="text" class="form-control" id="mail" placeholder="请输入邮箱">
+					<label for="username">手机</label>
+					<input type="text" class="form-control" id="phone" placeholder="请输入手机">
+					<input type="button" class="btn btn-primary" value="注&nbsp;册" style="margin-top: 25px;float: right;margin-bottom: 10px;" id="registerbutton"/>
+					<div style="height: 50px;"></div>
+				</form>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/bootstrap.min.js "></script>
+	<script src="js/jquery.js,jquery.backstretch.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$.backstretch([
+				'images/background-image/1.jpg',
+				'images/background-image/3.jpg'
+			], {
+				duration: 3000,
+				fade: 750
+			});
+            $("#content-register").fadeIn(5000);
+            $("#registerbutton").click(function(){
+                var name = $("#name").val();
+                var password = $("#password").val();
+                var repassword = $("#repassword").val();
+                var mail = $("#mail").val();
+                var phone = $("#phone").val();
+                if(name == "" || password == "" || repassword == "" || mail == "" || phone == ""){
+                    alert("请输入每项信息，不能为空");
+                }
+            })
+		})
+	</script>
+
+</html>

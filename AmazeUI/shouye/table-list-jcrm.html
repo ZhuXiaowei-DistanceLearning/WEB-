@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>仅供学习使用-教程入门</title>
+        <meta name="description" content="这是一个 index 页面">
+        <meta name="keywords" content="index">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        <link rel="icon" type="image/png" href="../assets/i/favicon.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/i/app-icon72x72@2x.png">
+        <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+        <link rel="stylesheet" href="../assets/css/amazeui.min.css" />
+        <link rel="stylesheet" href="../assets/css/amazeui.datatables.min.css" />
+        <link rel="stylesheet" href="../assets/css/app.css">
+        <script src="../assets/js/jquery.min.js"></script>
+
+    </head>
+
+    <body data-type="widgets">
+        <script src="../assets/js/theme.js"></script>
+        <div class="am-g tpl-g">
+            <!-- 头部 -->
+            <header>
+                <!-- logo -->
+                <div class="am-fl tpl-header-logo">
+                    <a href="../index.html"><img src="../../images/background-image/logo.png"></a>
+                </div>
+                <!-- 右侧内容 -->
+                <div class="tpl-header-fluid">
+                    <!-- 侧边切换 -->
+                    <div class="am-fl tpl-header-switch-button am-icon-list">
+                        <span>
+
+                        </span>
+                    </div>
+                    <!-- 搜索 -->
+                    <div class="am-fl tpl-header-search">
+                        <form class="tpl-header-search-form" action="javascript:;">
+                            <button class="tpl-header-search-btn am-icon-search"></button>
+                            <input class="tpl-header-search-box" type="text" placeholder="搜索内容...">
+                        </form>
+                    </div>
+                    <!-- 其它功能-->
+                    <div class="am-fr tpl-header-navbar">
+                        <ul>
+                            <!-- 欢迎语 -->
+                            <li class="am-text-sm tpl-header-navbar-welcome">
+                                <a href="javascript:;">朱小威, <span>学号：2018200280</span> </a>
+                            </li>
+
+                            <!-- 新邮件 -->
+                            <li class="am-dropdown tpl-dropdown" data-am-dropdown>
+                                <a href="javascript:;" class="am-dropdown-toggle tpl-dropdown-toggle"
+                                    data-am-dropdown-toggle>
+                                    <i class="am-icon-envelope"></i>
+                                    <span class="am-badge am-badge-success am-round item-feed-badge">1</span>
+                                </a>
+                                <!-- 弹出列表 -->
+                                <ul class="am-dropdown-content tpl-dropdown-content">
+                                    <li class="tpl-dropdown-menu-messages">
+                                        <a href="javascript:;" class="tpl-dropdown-menu-messages-item am-cf">
+                                            <div class="menu-messages-content">
+                                                <div class="menu-messages-content-title">
+                                                    <span>朱小威&nbsp;&nbsp;|&nbsp;&nbsp; 学号：2018200280</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="tpl-dropdown-menu-messages">
+                                        <a href="javascript:;" class="tpl-dropdown-menu-messages-item am-cf">
+                                            <i class="am-icon-circle-o"></i> 进入列表…
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- 新提示 -->
+                            <li class="am-dropdown" data-am-dropdown>
+                                <a href="javascript:;" class="am-dropdown-toggle" data-am-dropdown-toggle>
+                                    <i class="am-icon-bell"></i>
+                                    <span class="am-badge am-badge-warning am-round item-feed-badge">1</span>
+                                </a>
+
+                                <!-- 弹出列表 -->
+                                <ul class="am-dropdown-content tpl-dropdown-content">
+                                    <li class="tpl-dropdown-menu-notifications">
+                                        <a href="javascript:;" class="tpl-dropdown-menu-notifications-item am-cf">
+                                            <div class="tpl-dropdown-menu-notifications-title">
+                                                <span> 朱小威&nbsp;&nbsp;|&nbsp;&nbsp; 学号：2018200280</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="tpl-dropdown-menu-notifications">
+                                        <a href="javascript:;" class="tpl-dropdown-menu-notifications-item am-cf">
+                                            <i class="am-icon-bell"></i> 进入列表…
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- 退出 -->
+                            <li class="am-text-sm">
+                                <a href="javascript:;">
+                                    <span class="am-icon-sign-out"></span> 退出
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header><!-- 风格切换 -->
+            <div class="tpl-skiner">
+                <div class="tpl-skiner-toggle am-icon-cog">
+                </div>
+                <div class="tpl-skiner-content">
+                    <div class="tpl-skiner-content-title">
+                        选择主题
+                    </div>
+                    <div class="tpl-skiner-content-bar">
+                        <span class="skiner-color skiner-white" data-color="theme-white"></span>
+                        <span class="skiner-color skiner-black" data-color="theme-black"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 侧边导航栏 -->
+            <div class="left-sidebar">
+                <!-- 用户信息 -->
+                <div class="tpl-sidebar-user-panel">
+                    <div class="tpl-user-panel-slide-toggleable" style="margin-top: 50px;">
+                        <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
+                        当前用户：朱小威<br />
+                        <a href="javascript:;" class="tpl-user-panel-action-link"> <span class="am-icon-pencil"></span>
+                            账号设置</a>
+                    </div>
+                </div>
+
+                <!-- 菜单 -->
+                <ul class="sidebar-nav">
+                    <li class="sidebar-nav-heading">Catalog <span class="sidebar-nav-heading-info"> 目录</span></li>
+                    <li class="sidebar-nav-link">
+                        <a href="javascript:;" class="sidebar-nav-sub-title active">
+                            <i class="am-icon-table sidebar-nav-link-logo"></i> 首页
+                            <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico sidebar-nav-sub-ico-rotate"></span>
+                        </a>
+                        <ul class="sidebar-nav sidebar-nav-sub" style="display: block;">
+                            <li class="sidebar-nav-link">
+                                <a href="table-list-lunbo.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 轮播图
+                                </a>
+                            </li>
+                            <li class="sidebar-nav-link">
+                                <a href="table-list-jcrm.html" class="sub-active">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 教程入门
+                                </a>
+                            </li>
+                            <li class="sidebar-nav-link">
+                                <a href="table-list-rmlm.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 热门栏目
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-nav-link">
+                        <a href="javascript:;" class="sidebar-nav-sub-title">
+                            <i class="am-icon-table sidebar-nav-link-logo"></i> 文章
+                            <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
+                        </a>
+                        <ul class="sidebar-nav sidebar-nav-sub">
+                            <li class="sidebar-nav-link">
+                                <a href="../wenzhang/table-list-wz.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 文章
+                                </a>
+                            </li>
+                            <li class="sidebar-nav-link">
+                                <a href="../wenzhang/table-list-xjlr.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 细节猎人
+                                </a>
+                            </li>
+
+                            <li class="sidebar-nav-link">
+                                <a href="../wenzhang/table-list-ztgl.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 专题管理
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-nav-link">
+                        <a href="javascript:;" class="sidebar-nav-sub-title">
+                            <i class="am-icon-table sidebar-nav-link-logo"></i> 细节猎人
+                            <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
+                        </a>
+                        <ul class="sidebar-nav sidebar-nav-sub">
+                            <li class="sidebar-nav-link">
+                                <a href="../xijielieren/table-list-gg.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 广告
+                                </a>
+                            </li>
+
+                            <li class="sidebar-nav-link">
+                                <a href="../xijielieren/table-list-xjlb.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 细节列表
+                                </a>
+                            </li>
+
+                            <li class="sidebar-nav-link">
+                                <a href="../xijielieren/table-list-ysdb.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 优设读报
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-nav-link">
+                        <a href="javascript:;" class="sidebar-nav-sub-title">
+                            <i class="am-icon-table sidebar-nav-link-logo"></i> 吉大读报
+                            <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
+                        </a>
+                        <ul class="sidebar-nav sidebar-nav-sub">
+                            <li class="sidebar-nav-link">
+                                <a href="../jidadubao/table-list-jddb.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 优设读报
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-nav-link">
+                        <a href="javascript:;" class="sidebar-nav-sub-title">
+                            <i class="am-icon-table sidebar-nav-link-logo"></i> UiiiUiii课程
+                            <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
+                        </a>
+                        <ul class="sidebar-nav sidebar-nav-sub">
+                            <li class="sidebar-nav-link">
+                                <a href="../UiiiUiii/table-list-rmkc.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> UiiiUiii热门课程
+                                </a>
+                            </li>
+
+                            <li class="sidebar-nav-link">
+                                <a href="../UiiiUiii/table-list-kclb.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 课程列表
+                                </a>
+                            </li>
+
+                            <li class="sidebar-nav-link">
+                                <a href="../UiiiUiii/table-list-tjsjs.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 推荐设计师
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-nav-link">
+                        <a href="javascript:;" class="sidebar-nav-sub-title">
+                            <i class="am-icon-table sidebar-nav-link-logo"></i> 免费教程
+                            <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
+                        </a>
+                        <ul class="sidebar-nav sidebar-nav-sub">
+                            <li class="sidebar-nav-link">
+                                <a href="../mianfeijiaocheng/table-list-gzh.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 新版公众号首图
+                                </a>
+                            </li>
+
+                            <li class="sidebar-nav-link">
+                                <a href="../mianfeijiaocheng/table-list-gzewm.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 关注二维码
+                                </a>
+                            </li>
+
+                            <li class="sidebar-nav-link">
+                                <a href="../mianfeijiaocheng/table-list-ztztc.html">
+                                    <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 主图直通车
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- 内容区域 -->
+            <div class="tpl-content-wrapper">
+                <div class="row-content am-cf">
+                    <div class="row">
+                        <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                            <div class="widget am-cf">
+                                <div class="widget-head am-cf">
+                                    <div class="widget-title  am-cf">教程入门</div>
+                                </div>
+                                <div class="widget-body  am-fr">
+                                    <div class="am-u-sm-12 am-u-md-6 am-u-lg-6">
+                                        <div class="am-form-group">
+                                            <div class="am-btn-toolbar">
+                                                <div class="am-btn-group am-btn-group-xs">
+                                                    <button type="button" class="am-btn am-btn-default am-btn-success"
+                                                        onclick="addModal()">
+                                                        <span class="am-icon-plus"></span>新增教程入门内容</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
+                                        <div class="am-form-group tpl-table-list-select">
+                                            <select data-am-selected="{btnSize: 'sm'}">
+                                                <option value="option1">所有类别</option>
+                                                <option value="option2">PhotoShop</option>
+                                                <option value="option2">Illustrator</option>
+                                                <option value="option2">After Effects</option>
+                                                <option value="option2">Cinema 4D</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-3">
+                                        <div class="am-input-group am-input-group-sm tpl-form-border-form cl-p">
+                                            <input type="text" class="am-form-field ">
+                                            <span class="am-input-group-btn">
+                                                <button class="am-btn  am-btn-default am-btn-success tpl-table-list-field am-icon-search"
+                                                    type="button"></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="am-u-sm-12">
+                                    <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black ">
+                                        <thead>
+                                            <tr>
+                                                <th>缩略图</th>
+                                                <th>大标题</th>
+                                                <th>小标题</th>
+                                                <th>内容</th>
+                                                <th>操作</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="gradeX">
+                                                <td>
+                                                    <img src="../../images/uiii-ps-icon.png" class="tpl-table-line-img"
+                                                        alt="">
+                                                </td>
+                                                <td class="am-text-middle">PhotoShop</td>
+                                                <td class="am-text-middle">PS新手入门</td>
+                                                <td class="am-text-middle">设计师必学神器</td>
+                                                <td class="am-text-middle">
+                                                    <div class="tpl-table-black-operation">
+                                                        <a href="#" onclick="addModal()">
+                                                            <i class="am-icon-pencil"></i> 编辑
+                                                        </a>
+                                                        <a href="#" onclick="deleteModal()" id="delete" class="tpl-table-black-operation-del">
+                                                            <i class="am-icon-trash"></i> 删除
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="even gradeC">
+                                                <td>
+                                                    <img src="../../images/uiii-ai-icon.png" class="tpl-table-line-img"
+                                                        alt="">
+                                                </td>
+                                                <td class="am-text-middle">Illustrator</td>
+                                                <td class="am-text-middle">AI新手入门</td>
+                                                <td class="am-text-middle">矢量绘图小能手</td>
+                                                <td class="am-text-middle">
+                                                    <div class="tpl-table-black-operation">
+                                                        <a href="#" onclick="addModal()">
+                                                            <i class="am-icon-pencil"></i> 编辑
+                                                        </a>
+                                                        <a href="#" onclick="deleteModal()" id="delete" class="tpl-table-black-operation-del">
+                                                            <i class="am-icon-trash"></i> 删除
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>
+                                                    <img src="../../images/uiii-ae-icon.png" class="tpl-table-line-img"
+                                                        alt="">
+                                                </td>
+                                                <td class="am-text-middle">After Effects</td>
+                                                <td class="am-text-middle">AE新手入门</td>
+                                                <td class="am-text-middle">动效设计不再难</td>
+                                                <td class="am-text-middle">
+                                                    <div class="tpl-table-black-operation">
+                                                        <a href="#" onclick="addModal()">
+                                                            <i class="am-icon-pencil"></i> 编辑
+                                                        </a>
+                                                        <a href="#" onclick="deleteModal()" id="delete" class="tpl-table-black-operation-del">
+                                                            <i class="am-icon-trash"></i> 删除
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>
+                                                    <img src="../../images/uiii-c4d-icon.png" class="tpl-table-line-img"
+                                                        alt="">
+                                                </td>
+                                                <td class="am-text-middle">Cinema 4D</td>
+                                                <td class="am-text-middle">C4D入门</td>
+                                                <td class="am-text-middle">2018最火软件</td>
+                                                <td class="am-text-middle">
+                                                    <div class="tpl-table-black-operation">
+                                                        <a href="#" onclick="addModal()">
+                                                            <i class="am-icon-pencil"></i> 编辑
+                                                        </a>
+                                                        <a href="#" onclick="deleteModal()" id="delete" class="tpl-table-black-operation-del">
+                                                            <i class="am-icon-trash"></i> 删除
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 添加模块窗口 -->
+            <div class="am-modal am-modal-no-btn" id="doc-modal-1">
+                <div class="am-modal-dialog">
+                    <div class="am-modal-hd">新增轮播图
+                        <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                    </div>
+                    <div class="am-modal-bd">
+                        <div class="tpl-block">
+                            <div class="am-g">
+                                <div class="tpl-form-body tpl-form-line">
+                                    <form class="am-form tpl-form-line-form">
+                                        <div class="am-form-group">
+                                            <label for="user-weibo" class="am-u-sm-3 am-form-label">标题图片
+                                                <span class="tpl-form-line-small-title">Images</span></label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-form-group am-form-file">
+                                                    <div class="tpl-form-file-img">
+                                                        <img src="../assets/img/a5(2).png" alt="">
+                                                    </div>
+                                                    <button type="button" class="am-btn am-btn-danger am-btn-sm">
+                                                        <i class="am-icon-cloud-upload"></i>
+                                                        添加图片</button>
+                                                    <input id="doc-form-file" type="file" multiple>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group">
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">大标题 <span class="tpl-form-line-small-title">Title</span></label>
+                                            <div class="am-u-sm-9">
+                                                <input type="text" class="tpl-form-input" id="user-name" placeholder="大标题内容">
+                                                <small>必填</small>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group">
+                                            <label for="user-name" class="am-u-sm-3 am-form-label"> 小标题 <span class="tpl-form-line-small-title">Title</span></label>
+                                            <div class="am-u-sm-9">
+                                                <input type="text" class="tpl-form-input" id="user-name" placeholder="小标题内容">
+                                                <small>必填</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="am-form-group">
+                                            <label for="user-name" class="am-u-sm-3 am-form-label"> 内容 <span class="tpl-form-line-small-title">Title</span></label>
+                                            <div class="am-u-sm-9">
+                                                <input type="text" class="tpl-form-input" id="user-name" placeholder="内容">
+                                                <small>必填</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="am-form-group">
+                                            <div class="am-u-sm-9 am-u-sm-push-3">
+                                                <button type="button" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 删除Modal -->
+            <div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
+                <div class="am-modal-dialog">
+                    <div class="am-modal-hd"></div>
+                    <div class="am-modal-bd">
+                        你，确定要删除这条记录吗？
+                    </div>
+                    <div class="am-modal-footer">
+                        <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+                        <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+                    </div>
+                </div>
+            </div>
+            <script src="../assets/js/amazeui.min.js"></script>
+            <script src="../assets/js/app.js"></script>
+
+    </body>
+    <script type="text/javascript">
+        function addModal() {
+            $("#doc-modal-1").modal();
+        }
+
+        function deleteModal() {
+            $("#my-confirm").modal({
+                relatedTarget: this,
+                onConfirm: function(options) {
+                    var $link = $(this.relatedTarget).prev('a');
+                    var msg = $link.length ? '你要删除的链接 ID 为 ' + $link.data('id') :
+                        '删除成功';
+                    alert(msg);
+                },
+                onCancel: function() {
+                    alert('算求，不弄了');
+                }
+            });
+        }
+    </script>
+</html>

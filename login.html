@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>仅用于学习-登录页面</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<link href="http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700'>
+		<style>
+			#panel-login{
+                animation-name:myfirst;
+                animation-duration:9s;
+                animation-delay: 1s;
+                animation-timing-function:ease;
+                /* -webkit-animation-iteration-count:infinite; 规定播放次数
+                -webkit-animation-direction:alternate; 规定在下一周期逆向地播放
+                -webkit-animation-play-state:running; 规定动画是否正在运行*/ 
+            }
+            #leftimg{
+                transform-style: preserve-3d;
+                animation-name:leftimg;
+                animation-duration:6s;
+                animation-delay: 9s;
+                animation-iteration-count:infinite;
+                animation-direction:alternate;
+            }
+            @keyframes leftimg{
+                0%   {transform:rotateX(0deg) rotateY(0deg);}
+                20%   {transform:rotateX(60deg) rotateY(60deg);}
+                40%   {transform:rotateX(120deg) rotateY(120deg);}
+                60%   {transform:rotateX(180deg) rotateY(180deg);}
+                80%   {transform:rotateX(240deg) rotateY(240deg);}
+                100% {transform:rotateX(360deg) rotateY(360deg);}
+            }
+            @keyframes myfirst{
+                0%   {left:0px; top:0px;transform: rotate(60deg);}
+                20%  {left:0px;top: 0px;transform: rotate(120deg);}
+                40%  {left:500px; top:0px;transform: rotate(180deg);}
+                60%  {left:500px; top:200px;transform: rotate(240deg);}
+                80%  { left:0px; top:200px;transform: rotate(300deg);}
+                100% {left:0px; top:0px;transform: rotate(360deg);}
+            }
+        </style>
+	</head>
+	<body>
+		<div class="header" style="background:#f8f8f8 url(images/background-image/pattern.jpg); left top repeat">
+			<div class="container">
+				<div class="row" id="header-font">
+					<div class="login col-md-4 col-xs-4">
+						<div style="float: left;">
+							<a href="index.html"><img src="images/background-image/logo.png" /></a>
+						</div>
+						<h1>
+							<a href="index.html">
+								<span>
+									JS
+								</span>
+								UNIVERSTY
+								<p style="font-size: 15px;">union</p>
+							</a>
+						</h1>
+					</div>
+					<div class="col-md-8 col-xs-8">
+						<div style="width: auto;height: 30px;margin-left: 500px;margin-top: 30px;">
+							还没有账号？赶紧
+							<a href="register.html">注册</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row" style="position: relative;margin-top: 150px;margin-left: 100px;" id="panel-login">
+				<div class="col-md-5 col-xs-5" id="leftimg" style="position: relative;">
+					<img src="images/background-image/book.png" height="355px" />
+				</div>
+				<div class="col-md-7 col-xs-7" id="rightcontent">
+					<form class="login-from" style="background:#f8f8f8 url(images/background-image/pattern.jpg); left top repeat;width: 450px;">
+						<h2 style="background:url(images/background-image/pencil.png) 70px 6px no-repeat;">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">用户登录</font>
+							</font>
+						</h2>
+						<label for="username">用户名</label>
+						<input type="text" class="form-control" id="name" placeholder="登录">
+						<label for="username">密码</label>
+						<input type="text" class="form-control" id="name" placeholder="请输入密码">
+						<input type="button" class="btn btn-primary" value="登&nbsp;录" style="margin-top: 25px;float: right;margin-bottom: 10px;" />
+						<div style="height: 50px;"></div>
+					</form>
+				</div>
+			</div>
+			<div class="row" style="position: absolute;left: 800px;top: 700px;">
+				<button type="button" class="btn btn-primary btn-lg" id="fade-in">淡入效果</button>
+				<button type="button" class="btn btn-primary btn-lg" id="fade-out">淡出效果</button>
+				<button type="button" class="btn btn-primary btn-lg" id="silde-up">向上滑动</button>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/bootstrap.min.js "></script>
+	<script src="js/jquery.js,jquery.backstretch.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$.backstretch([
+				'images/background-image/1.jpg',
+				'images/background-image/3.jpg'
+			], {
+				duration: 3000,
+				fade: 750
+			});
+			$("#fade-in").click(function() {
+				$("#panel-login #rightcontent #leftimg").attr("style", "display:none");
+				$("#panel-login div").fadeIn(3000);
+			})
+			$("#fade-out").click(function() {
+				$("#panel-login div").fadeOut(3000);
+			})
+			$("#silde-up").click(function() {
+				$("#panel-login div").slideUp(3000);
+			})
+		})
+	</script>
+
+</html>

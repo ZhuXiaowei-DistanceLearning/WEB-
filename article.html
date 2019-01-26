@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>仅用于学习-文章</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <style>
+            #six li {
+                float: left;
+                text-align: center;
+                width: 33.3%;
+                background-color: #fff;
+                line-height: 2.1em;
+                border-bottom: 1px solid #cccccc;
+                border-right: 1px solid #cccccc;
+                border: 1px solid #cccccc;
+                padding: 10px;
+            }
+
+            #footer-inner {
+                max-width: 1170px;
+                padding-bottom: 20px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+
+            #footer-inner-block {
+                width: 25%;
+                height: 242px;
+                padding: 0 40px;
+                float: left;
+                position: relative;
+                overflow: hidden;
+                box-sizing: border-box;
+                padding-left: 0px;
+            }
+
+            #footUl {
+                list-style: none;
+                padding-left: 0px;
+            }
+
+            #footUl li {
+                margin: 6px;
+                float: left;
+                text-align: center;
+            }
+
+            #daohang {
+                height: 57px;
+            }
+
+            #daohang li {
+                height: 57px;
+                margin-left: 22px;
+            }
+
+            #daohang li a {
+                height: 57px;
+                padding-top: 18px;
+            }
+
+            .xjlr {
+                width: 33%;
+                height: 35px;
+                line-height: 35px;
+                display: block;
+                float: left;
+                cursor: pointer;
+                background: #fe4800;
+                color: #fff;
+                border-bottom: 1px solid #fe4800;
+                text-align: center;
+                font-size: 12px;
+            }
+
+            .zcgh {
+                width: 33%;
+                height: 35px;
+                line-height: 35px;
+                display: block;
+                float: left;
+                cursor: pointer;
+                background: #f2f2f2;
+                border-bottom: solid 1px #e4e4e4;
+                border-right: 1px solid #e4e4e4;
+                text-align: center;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="background-color:#f2f2f2;height: 32px;">
+            <div class="container">
+                <ol class="breadcrumb" style="font-size: 11px;background-color: #f2f2f2;">
+                    <li class="active">
+                        欢迎来到吉大设计联盟&nbsp;&nbsp;/&nbsp;&nbsp;<span id="showtime"></span>
+                    </li>
+                </ol>
+                <div style="position: absolute;right: 370px;top: 0;font-size: 11px;">
+                    <ol class="breadcrumb" style="background-color: #f2f2f2;">
+                        <li>
+                            <a href="login.html">请登录</a>
+                        </li>
+                        <li>
+                            <a href="register.html">免费注册</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="header" style="width: 100%;height: 57px; background: #fff;z-index: auto;">
+            <nav class="navbar navbar-default" style="background: #fff;margin-bottom: 0px;height: 57px;">
+                <div class="container" style="height: 57px;">
+                    <div class="navbar-header" style="">
+                        <div style="width: 160px;height: 57px;z-index: 10;display: block;">
+                            <a style="display: block;width: 160px;height: 57px;text-align: center;line-height: 57px;">
+                                <img src="images/background-image/logo.png" style="width: 68px;height: 42px;" />
+                                <font style="font-family: 'Dosis', sans-serif;">吉大设计联盟</font>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <div style="height: 57px;">
+                            <ul class="nav navbar-nav" id="daohang">
+                                <li>
+                                    <a href="index.html">首页</a>
+                                </li>
+                                <li>
+                                    <a href="article.html" style="border-bottom:  5px solid #ff6000;">
+                                        <p style="color: #ff6000;">文章</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="xijielieren.html">细节猎人</a>
+                                </li>
+                                <li>
+                                    <a href="jidadubao.html">吉大读报</a>
+                                </li>
+                                <li>
+                                    <a href="UiiiUiii.html">UiiiUiii课程</a>
+                                </li>
+                                <li>
+                                    <a href="mianfeisucai.html">免费教程</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+        <!-- header块 -->
+        <div id="header-container">
+            <div style="background: #f7f7f7;border-bottom: 1px solid #fff;padding: 50px 0 40px;text-align: center;">
+                <div class="container">
+                    <h2 style="color: #ff5a00;font-size: 28px;font-weight: bold;margin-bottom: 20px;">所有文章</h2>
+                    <h4 style="font-size: 14px;color: #888;margin-bottom: 40px;">---&nbsp;已发布文章10篇&nbsp;---</h4>
+                    <div>
+                        <a style="color: #0da4d3;text-decoration: none;display: block;padding: 9px;margin: -10px -10px;border: 1px solid transparent;"><img
+                                src="https://image.uisdc.com/wp-content/uploads/2018/10/1170-100-wui-18103.jpg" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- siderbar块 -->
+        <div id="zhongbu" class="container">
+            <div id="left" style="background: #fafafa;border: 1px solid #eee;padding-top: 25px;padding-right: 35px;padding-bottom: 1px;padding-left: 200%;margin-left:-200%;float: left;">
+                <div>
+                    <a href="" class="thumbnail">
+                        <img src="https://image.uisdc.com/wp-content/uploads/2018/06/uisdc-qt-613.png" />
+                    </a>
+                </div>
+                <div id="jiaochengrumen">
+                    <h3 style="font-size: 1em;color: #aaa;text-transform: uppercase;letter-spacing: 1px;word-spacing: 2px;">教程入门</h3>
+                    <div>
+                        <ul style="list-style: none;padding-left: 0px;margin: 0px;">
+                            <li style="margin-top: 20px;"><img src="images/uiii-ps-icon.png" style="width: 45px;float: left;" />
+                                <h3 style="font-size: 16px;font-weight: bold;margin: 0 0 7px 60px;line-height: 1;">PhotoShop</h3>
+                                <h4 style="font-size: 14px;margin: 0 0 7px 60px;line-height: 1;">PS新手入门</h4>
+                                <p style="margin: 0 0 7px 60px;color: #bbb;line-height: 1;font-size: 12px;">设计师必学神器</p>
+                            </li>
+                            <li style="margin-top: 20px;"><img src="images/uiii-ai-icon.png" style="width: 45px;float: left;" />
+                                <h3 style="font-size: 16px;font-weight: bold;margin: 0 0 7px 60px;line-height: 1;">Illustrator</h3>
+                                <h4 style="font-size: 14px;margin: 0 0 7px 60px;line-height: 1;">AI新手入门</h4>
+                                <p style="margin: 0 0 7px 60px;color: #bbb;line-height: 1;font-size: 12px;">矢量绘图小能手</p>
+                            </li>
+                            <li style="margin-top: 20px;"><img src="images/uiii-ae-icon.png" style="width: 45px;float: left;" />
+                                <h3 style="font-size: 16px;font-weight: bold;margin: 0 0 7px 60px;line-height: 1;">After
+                                    Effects</h3>
+                                <h4 style="font-size: 14px;margin: 0 0 7px 60px;line-height: 1;">AE新手入门</h4>
+                                <p style="margin: 0 0 7px 60px;color: #bbb;line-height: 1;font-size: 12px;">动效设计不再难</p>
+                            </li>
+                            <li style="margin-top: 20px;"><img src="images/uiii-c4d-icon.png" style="width: 45px;float: left;" />
+                                <h3 style="font-size: 16px;font-weight: bold;margin: 0 0 7px 60px;line-height: 1;">Cinema
+                                    4D</h3>
+                                <h4 style="font-size: 14px;margin: 0 0 7px 60px;line-height: 1;">C4D入门</h4>
+                                <p style="margin: 0 0 7px 60px;color: #bbb;line-height: 1;font-size: 12px;">2018最火软件</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="remenlanmu" style="margin: 0 0 25px;float: left;width: 100%;">
+                    <h3 style="font-size: 1em;color: #aaa;text-transform: uppercase;letter-spacing: 1px;word-spacing: 2px;">热门栏目</h3>
+                    <div style="width: 180px;">
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">干货集合</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">APP设计</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">网页设计</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">PS技巧</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">UI设计</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">用户体验</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">经验分享</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">平面设计</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">神奇推荐</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">Logo设计</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">酷站推荐</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">设计师职场</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">交互设计</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">字体设计</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">产品设计</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">WEB前端</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">中文字体</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">图库网站</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">免费资源</a>
+                        <a style="float: left;width: 80px;margin: 0 10px 5px 0;border: 1px solid #e9e9e9;padding: 5px 0;text-align: center;font-size: 12px;white-space: nowrap;overflow: hidden;color: #888;">自学手绘</a>
+                    </div>
+                </div>
+                <div style="margin-bottom: 20px">
+                    <img src="images/c4d-81-160-100.jpg" />
+                </div>
+                <div style="margin-bottom: 20px">
+                    <img src="article/uisdc-xc-181023.jpg" />
+                </div>
+            </div>
+            <!-- content块 -->
+            <div id="content" style="float: none;margin-left: 215px;width: auto;padding-top: 25px;padding-bottom: 1px;">
+                <div id="content-right" style="width: 270px;float: right;">
+                    <div style="float: right;width: 100%;margin-bottom: 15px;">
+                        <div id="tables-line" style="height: 35px;line-height: 35px;font-size: 1.2em;margin-bottom: 0.7em;">
+                            <span id="xjlr" class="xjlr">细节猎人</span>
+                            <span id="zcgh" class="zcgh">职场规划</span>
+                            <span id="cnxh" class="zcgh">猜你喜欢</span>
+                        </div>
+                        <ul class="list-group" style="margin-top: 5px;margin-bottom:10px;padding: 0;" id="xjlr-content">
+                            <li style="margin-bottom: 5px;font-size: 13px;overflow: hidden;height: 20px;">
+                                <span class="badge">1</span>&nbsp;&nbsp;最后一天报名！AI 插画特训班第12期开班啦！
+                            </li>
+                            <li style="margin-bottom: 5px;font-size: 13px;overflow: hidden;height: 20px;">
+                                <span class="badge">2</span>&nbsp;&nbsp;转了锦鲤后，我的薪资真的翻倍了…
+                            </li>
+                            <li style="margin-bottom: 5px;font-size: 13px;overflow: hidden;height: 20px;">
+                                <span class="badge">3</span>&nbsp;&nbsp;怎样成为苹果的设计实习生？看看过来人的经验分享
+                            </li>
+                            <li style="margin-bottom: 5px;font-size: 13px;overflow: hidden;height: 20px;">
+                                <span class="badge">4</span>&nbsp;&nbsp;凭借会AE动效设计的加分项，上周收到了2家UI设计师岗位的offer…
+                            </li>
+                            <li style="margin-bottom: 5px;font-size: 13px;overflow: hidden;height: 20px;">
+                                <span class="badge">5</span>&nbsp;&nbsp;毕业想进腾讯？官方送你一份超详细的校招设计师求生指南
+                        </ul>
+                        <ul class="list-group" style="margin-top: 5px;margin-bottom:10px;padding: 0;display: none;" id="zcgh-content">
+                            <li style="margin-bottom: 5px;font-size: 13px;overflow: hidden;height: 20px;">
+                                <span class="badge">1</span>&nbsp;&nbsp;职场规划
+                            </li>
+                            <li style="margin-bottom: 5px;font-size: 13px;overflow: hidden;height: 20px;">
+                                <span class="badge">2</span>&nbsp;&nbsp;职场规划
+                            </li>
+                        </ul>
+                        <ul class="list-group" style="margin-top: 5px;margin-bottom:10px;padding: 0;display: none;" id="cnxh-content">
+                            <li style="margin-bottom: 5px;font-size: 13px;overflow: hidden;height: 20px;">
+                                <span class="badge">1</span>&nbsp;&nbsp;猜你喜欢
+                            </li>
+                            <li style="margin-bottom: 5px;font-size: 13px;overflow: hidden;height: 20px;">
+                                <span class="badge">2</span>&nbsp;&nbsp;猜你喜欢
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="width: 270px;float: right;">
+                        <div style="float: left;width: 100%;margin-bottom: 15px;overflow: hidden;margin: 20px 0 0;">
+                            <div class="col-sm-12" style="width: 100%;padding: 0;float: none;">
+                                <div style="margin-bottom: 30px;">
+                                    <a style="display: block;border: 1px solid #eaeaea;color: #555;">
+                                        <div style="background-image:url(images/article/vr-zt-0712.jpg);width: 100%;height: 0;padding-top: 49.18918919%;position: relative;background-position: center;background-size: cover;background-repeat: no-repeat;margin-bottom: 15px;"></div>
+                                        <h2 style="font-size: 17px;margin-left:15px;margin-bottom: 2px;margin-top: 0;height: 22px;overflow: hidden;color: #525252;">VR设计</h2>
+                                        <h4 style="margin: 0 15px 15px;font-size: 15px;line-height: 1.5em;height: 1.5em;overflow: hidden;color: #525252;">从零开始的VR
+                                            设计学习指南</h4>
+                                        <div style="text-align: center;margin: 0 0 22px;">
+                                            <span style="display: inline-block;padding: 3px 8px;font-size: 13px;border: 1px solid #eaeaea;cursor: pointer;letter-spacing: 1px;">查看专题</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 270px;float: right;">
+                        <div style="float: left;width: 100%;margin-bottom: 15px;overflow: hidden;margin: 20px 0 0;">
+                            <div class="col-sm-12" style="width: 100%;padding: 0;float: none;">
+                                <div style="margin-bottom: 30px;">
+                                    <a style="display: block;border: 1px solid #eaeaea;color: #555;">
+                                        <div style="background-image:url(images/article/sjgh-zt-180908.jpg);width: 100%;height: 0;padding-top: 49.18918919%;position: relative;background-position: center;background-size: cover;background-repeat: no-repeat;margin-bottom: 15px;"></div>
+                                        <h2 style="margin-top:10px;font-size: 17px;margin-left:15px;margin-bottom: 2px;margin-top: 0;height: 22px;overflow: hidden;color: #525252;">每月设计干货</h2>
+                                        <h4 style="margin: 0 15px 15px;font-size: 15px;line-height: 1.5em;height: 1.5em;overflow: hidden;color: #525252;">每月最新的使用设计干货及时送</h4>
+                                        <div style="text-align: center;margin: 0 0 22px;">
+                                            <span style="display: inline-block;padding: 3px 8px;font-size: 13px;border: 1px solid #eaeaea;cursor: pointer;letter-spacing: 1px;">查看专题</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 270px;float: right;">
+                        <div style="float: left;width: 100%;margin-bottom: 15px;overflow: hidden;margin: 20px 0 0;">
+                            <div class="col-sm-12" style="width: 100%;padding: 0;float: none;">
+                                <div style="margin-bottom: 30px;">
+                                    <a style="display: block;border: 1px solid #eaeaea;color: #555;">
+                                        <div style="background-image:url(images/article/font-zt-0712.jpg);width: 100%;height: 0;padding-top: 49.18918919%;position: relative;background-position: center;background-size: cover;background-repeat: no-repeat;margin-bottom: 15px;"></div>
+                                        <h2 style="font-size: 17px;margin-left:15px;margin-bottom: 2px;margin-top: 0;height: 22px;overflow: hidden;color: #525252;">字体设计</h2>
+                                        <h4 style="margin: 0 15px 15px;font-size: 15px;line-height: 1.5em;height: 1.5em;overflow: hidden;color: #525252;">掌握一千零一种字体设计方法</h4>
+                                        <div style="text-align: center;margin: 0 0 22px;">
+                                            <span style="display: inline-block;padding: 3px 8px;font-size: 13px;border: 1px solid #eaeaea;cursor: pointer;letter-spacing: 1px;">查看专题</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-left " style="float: none;width: auto;max-width: 520px;margin-right: 300px;margin-left: 90px;margin-bottom: 0;">
+                    <div style="color: #888;font-size: 12px;line-height: 30px;padding: 3px;border-left: 10px solid #e9e9e9;background: #f7f7f7;margin-bottom: 30px;height: 30px;">首页&nbsp;&nbsp;\&nbsp;&nbsp;文章</div>
+                    <div id="list ">
+                        <div style="float: none;padding-bottom: 10px;margin-bottom: 30px;border-bottom: 1px solid #eee;margin: 0 0 5px 0;position: relative;float: left;width: 100%; ">
+                            <div style="color: #bbb;">
+                                <h2 style="font-size: 1.4em;padding-bottom: 5px; ">
+                                    <a style="color: #0da4d3;" href="# ">苏州一座“金字塔建筑”火了！为你揭秘背后的建筑设计师！</a>
+                                </h2>
+                                <div>2018-10-27&nbsp;&nbsp; 推荐：
+                                    <a style="color: #bbb;" href="#">3年2班程远</a> <span> &nbsp;&nbsp; </span></div>
+                            </div>
+                            <br />
+                            <div>
+                                <img src="images/article/uisdc-banner-20181027-12.jpg">
+                            </div>
+                            <br />
+                            <div style="line-height: 20px; ">
+                                本文转自日本设计小站（ID：japandesign），已获得其授权。 最近，苏州一座酷似金字塔的建筑火了！ 光看这张图就相当震撼，怕不是3d效果图吧？ 外国...
+                            </div>
+                        </div>
+                        <div style="float: none;padding-bottom: 10px;margin-bottom: 30px;border-bottom: 1px solid #eee;margin: 0 0 5px 0;position: relative;float: left;width: 100%; ">
+                            <div style="color: #bbb;">
+                                <h2 style="font-size: 1.4em;padding-bottom: 5px; ">
+                                    <a style="color: #0da4d3;" href="# ">设计师值得阅读的 9 本中文版设计美学杂志</a>
+                                </h2>
+                                <div style="color: #bbb;">2018-10-27 &nbsp;&nbsp; 推荐：
+                                    <a style="color: #bbb;" href="#">3年2班程远</a> <span> &nbsp;&nbsp; </span></div>
+                            </div>
+                            <br />
+                            <div>
+                                <img src="images/article/uisdc-banner-20181027-10.jpg">
+                            </div>
+                            <br />
+                            <div style="line-height: 20px; ">
+                                设计师值得阅读的9本中文版设计美学杂志！ 一、Design 360° 二、BranD 三、DRIFT中文版 四、ppaper 五、小日子 六、KINFOLK...
+                            </div>
+                        </div>
+                        <div style="float: none;padding-bottom: 10px;margin-bottom: 30px;border-bottom: 1px solid #eee;margin: 0 0 5px 0;position: relative;float: left;width: 100%; ">
+                            <div style="color: #bbb;">
+                                <h2 style="font-size: 1.4em;padding-bottom: 5px; ">
+                                    <a style="color: #0da4d3;" href="#">
+                                        Adobe新增逆天黑科技，90%的设计都看哭了…</a>
+                                </h2>
+                                <div style="color: #bbb;">2018-10-26 &nbsp;&nbsp; 推荐：
+                                    <a style="color: #bbb;" href="#">陈子木</a> <span> &nbsp;&nbsp; </span></div>
+                            </div>
+                            <br />
+                            <div>
+                                <img src="images/article/uisdc-banner-20181027-8.jpg">
+                            </div>
+                            <br />
+                            <div style="line-height: 20px; ">
+                                刚刚结束的2018 Adobe Max全球创意大会，让我们迎来了 Adobe全家桶的诸多全新功能，但这还并不能让人感到满足。 既然是「创意大会」而不是「产品...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #F7F7F7;padding: 55px 0;border-top: 1px solid #fff; ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-xs-3 col-md-3 ">
+                        <div class="thumbnail ">
+                            <img src="images/uisdc-bttsdh.png " alt="通用的占位符缩略图 ">
+                            <div class="caption ">
+                                <h3>设计师图书导航</h3>
+                                <p>优质图书在此集合！我该看什么书？在这里找到答案。点我点我</p>
+                                <p>
+                                    <a href="# " class="btn btn-primary " role="button ">
+                                    </a>
+                                    <a href="# " class="btn btn-default " role="button ">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 col-md-3 ">
+                        <div class="thumbnail ">
+                            <img src="images/usidc-btm-hunters.png " alt="通用的占位符缩略图 ">
+                            <div class="caption ">
+                                <h3>细节猎人</h3>
+                                <p>设计总监喜欢看的频道！捕获产品细节之美。立即查看</p>
+                                <p>
+                                    <a href="# " class="btn btn-primary " role="button ">
+                                    </a>
+                                    <a href="# " class="btn btn-default " role="button ">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 col-md-3 ">
+                        <div class="thumbnail ">
+                            <img src="images/uisdc-btyszt.jpg " alt="通用的占位符缩略图 ">
+                            <div class="caption ">
+                                <h3>优设专题</h3>
+                                <p>最具含金量的干货文章合辑，你想看的都在这里。点击学习</p>
+                                <p>
+                                    <a href="# " class="btn btn-primary " role="button ">
+                                    </a>
+                                    <a href="# " class="btn btn-default " role="button ">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 col-md-3 ">
+                        <div class="thumbnail ">
+                            <img src="images/uisdc-btzlg.png " alt="通用的占位符缩略图 ">
+                            <div class="caption ">
+                                <h3>找灵感</h3>
+                                <p>强悍！还怕没灵感？这里藏了大家都在用的新鲜灵感库。戳我戳我</p>
+                                <p>
+                                    <a href="# " class="btn btn-primary " role="button ">
+                                    </a>
+                                    <a href="# " class="btn btn-default " role="button ">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" style="padding-top: 15px;background-color: #353535; ">
+            <div id="footer-first">
+                <div id="footer-inner">
+                    <div id="footer-inner-block" style="padding-left: 0; ">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">关于我们</h2>
+                        </div>
+                        <div style=" font-size: 12px;line-height: 1.68;list-style: none;padding: 0;margin: 0;color: #8a8a8a; ">
+                            <p>优设网（uisdc.com）是国内人气最高的设计师学习平台。2012年成立至今，一直专注于设计师的学习成长交流。目前正通过网站、微博@优秀网页设计、微信(ID：youshege)、各大社群为设计师提供高水准的行业设计讲座和领先的设计资讯分享。为设计师发声、替好作品说话，是平台的运营理念。想更全面了解优设或联系我们合作，欢迎访问“关于我们”</p>
+                        </div>
+                    </div>
+                    <div id="footer-inner-block">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">我们的团队</h2>
+                        </div>
+                        <div>
+                            <ul id="footUl">
+                                <li>
+                                    <img src="img/team1zp.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team2cz.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team3sl.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team4wz.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team5yy.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team6xl.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team1-xy.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team1-zm.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team9xy.jpg " />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="footer-inner-block">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">大家在关注</h2>
+                        </div>
+                        <div style=" font-size: 12px;line-height: 1.68;list-style: none;color: #8a8a8a; ">
+                            <ul style="list-style: none;padding-left: 0px; ">
+                                <li>经验分享</li>
+                                <li>网页设计</li>
+                                <li>PS教程</li>
+                                <li>酷站</li>
+                                <li>ps技巧</li>
+                                <li>用户体验</li>
+                                <li>优秀网页设计</li>
+                                <li>设计师职场</li>
+                                <li>ui设计</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="footer-inner-block">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">优设微信</h2>
+                        </div>
+                        <div>
+                            <img src="img/2016-gwweixin-bottom.png " />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-two" style="background: black; ">
+                <div id="footer-inner">
+                    <div style="padding: 40px 0 0;text-align: center;">
+                        <p style="margin-bottom: 15px;font-size: 12px; ">广告合作&nbsp;&nbsp;&nbsp;免责声明&nbsp;&nbsp;&nbsp;友情链接&nbsp;&nbsp;&nbsp;联系我们&nbsp;&nbsp;&nbsp;关于我们&nbsp;&nbsp;&nbsp;@优秀网页设计</p>
+                        <p style="font-size: 12px; ">Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2018&nbsp;&nbsp;优设-UISDC&nbsp;&nbsp;-&nbsp;&nbsp;优设网官方微信号：youshege&nbsp;&nbsp;-&nbsp;&nbsp;鄂ICP备16005435号-1</p><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="js/jquery-3.1.1.min.js "></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script>
+        $(function() {
+            var time = new Date();
+            var year = time.getFullYear();
+            var month = time.getMonth() + 1;
+            var date = time.getDate();
+            var day = time.getDay();
+            var weeks = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+            var week = weeks[day];
+            var hour = time.getHours();
+            var greet;
+            if (hour >= 0 && hour < 12) {
+                var greet = "早上好";
+            } else if (hour >= 12 && hour < 18) {
+                var greet = "下午好"
+            } else if (hour >= 18 && hour < 24) {
+                var greet = "晚上好"
+            }
+            $("#showtime").html(greet + ",现在是" + year + "年" + month + "月" + date + "日" + " " + week)
+        })
+
+        $(function() {
+            var array = new Array();
+            array[0] = $("#xjlr-content");
+            array[1] = $("#zcgh-content");
+            array[2] = $("#cnxh-content");
+            var array_xjlr = new Array();
+            array_xjlr[0] = $("#xjlr");
+            array_xjlr[1] = $("#zcgh");
+            array_xjlr[2] = $("#cnxh");
+            $("#xjlr").mouseover(function() {
+                $.each(array, function(i, n) {
+                    n.hide()
+                })
+                $.each(array_xjlr, function(i, n) {
+                    if (n[0].id == 'xjlr') {
+                        n.removeClass();
+                        return true;
+                    } else {
+                        n.removeClass();
+                        n.addClass('zcgh');
+                    }
+                })
+                $("#xjlr").addClass('xjlr');
+                $("#xjlr-content").show()
+            })
+
+            $("#zcgh").mouseenter(function() {
+                $.each(array, function(i, n) {
+                    n.hide()
+                })
+                $.each(array_xjlr, function(i, n) {
+                    if (n[0].id == 'zcgh') {
+                        n.removeClass();
+                        return true;
+                    } else {
+                        n.removeClass();
+                        n.addClass('zcgh');
+                    }
+                })
+                $("#zcgh").addClass('xjlr');
+                $("#zcgh-content").show()
+            })
+            $("#cnxh").mouseenter(function() {
+                $.each(array, function(i, n) {
+                    n.hide()
+                })
+                $.each(array_xjlr, function(i, n) {
+                    if (n[0].id == 'cnxh') {
+                        n.removeClass();
+                        return true;
+                    } else {
+                        n.removeClass();
+                        n.addClass('zcgh');
+                    }
+                })
+                $("#cnxh").addClass('xjlr');
+                $("#cnxh-content").show()
+            })
+        })
+    </script>
+
+</html>

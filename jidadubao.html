@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>仅用于学习-吉大读报</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <style>
+            a:hover {
+                color: #ff6000;
+                border-color: #ff6000;
+                text-decoration: none;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            #header-container h2 {
+                margin-bottom: 6px;
+                color: #525252;
+                font-weight: bold;
+                font-size: 38px;
+            }
+
+            #header-container a {
+                color: #525252;
+                font-weight: normal;
+                font-size: 16px;
+                display: inline-block;
+                padding: 4px 9px 6px;
+                border: 1px solid #7a7a7a;
+                border-radius: 4px;
+            }
+
+            #contain h2 {
+                padding: 58px 0 40px;
+                color: #525252;
+                font-size: 22px;
+                line-height: 34px;
+                color: #ff5a00;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            #date {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 16px;
+                padding: 6px;
+                font-size: 16px;
+                line-height: 1;
+                border: 1px solid #ff5a00;
+                border-radius: 4px;
+            }
+
+            #week {
+                display: inline-block;
+                vertical-align: middle
+            }
+
+            #content-list li {
+                box-sizing: border-box;
+                list-style-type: none;
+                width: 752px;
+                margin: 0 auto;
+                padding: 34px 0 40px;
+                border-top: 1px dashed #dedede;
+            }
+
+            #content-list li h3 {
+                padding: 0;
+                color: #525252;
+                font-weight: bold;
+                font-size: 22px;
+            }
+
+            #footer-inner {
+                max-width: 1170px;
+                padding-bottom: 20px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+
+            #footer-inner-block {
+                width: 25%;
+                height: 242px;
+                padding: 0 40px;
+                float: left;
+                position: relative;
+                overflow: hidden;
+                box-sizing: border-box;
+                padding-left: 0px;
+            }
+
+            #footUl {
+                list-style: none;
+                padding-left: 0px;
+            }
+
+            #footUl li {
+                margin: 6px;
+                float: left;
+                text-align: center;
+            }
+
+            #daohang {
+                height: 57px;
+            }
+
+            #daohang li {
+                height: 57px;
+                margin-left: 22px;
+            }
+
+            #daohang li a {
+                height: 57px;
+                padding-top: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="background-color:#f2f2f2;height: 32px;">
+            <div class="container">
+                <ol class="breadcrumb" style="font-size: 11px;background-color: #f2f2f2;">
+                    <li class="active">
+                        欢迎来到吉大设计联盟&nbsp;&nbsp;/&nbsp;&nbsp;<span id="showtime"></span>
+                    </li>
+                </ol>
+                <div style="position: absolute;right: 370px;top: 0;font-size: 11px;">
+                    <ol class="breadcrumb" style="background-color: #f2f2f2;">
+                        <li>
+                            <a href="login.html">请登录</a>
+                        </li>
+                        <li>
+                            <a href="register.html">免费注册</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="header" style="width: 100%;height: 57px; background: #fff;z-index: auto;">
+            <nav class="navbar navbar-default" style="background: #fff;margin-bottom: 0px;height: 57px;">
+                <div class="container" style="height: 57px;">
+                    <div class="navbar-header" style="">
+                        <div style="width: 160px;height: 57px;z-index: 10;display: block;">
+                            <a style="display: block;width: 160px;height: 57px;text-align: center;line-height: 57px;">
+                                <img src="images/background-image/logo.png" style="width: 68px;height: 42px;" />
+                                <font style="font-family: 'Dosis', sans-serif;">吉大设计联盟</font>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <div style="height: 57px;">
+                            <ul class="nav navbar-nav" id="daohang">
+                                <li>
+                                    <a href="index.html">首页</a>
+                                </li>
+                                <li>
+                                    <a href="article.html">文章</a>
+                                </li>
+                                <li>
+                                    <a href="xijielieren.html">细节猎人</a>
+                                </li>
+                                <li>
+                                    <a href="jidadubao.html" style="border-bottom:  5px solid #ff6000;">
+                                        <p style="color: #ff6000;">吉大读报</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="UiiiUiii.html">UiiiUiii课程</a>
+                                </li>
+                                <li>
+                                    <a href="mianfeisucai.html">免费教程</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+        </div>
+        <!-- banner -->
+        <div id="header-container">
+            <div class="container" style="text-align: center;">
+                <div style="width: 220px;text-align: center;display: inline-block;vertical-align: middle;padding-right: 50px;">
+                    <h2>吉大读报</h2>
+                    <h4>校园资讯一站知晓</h4>
+                    <a>爆料热线</a>
+                </div>
+                <div style="display: inline-block;vertical-align: middle;">
+                    <img src="images/jidadubao/top-banner-news-summer.jpg" />
+                </div>
+            </div>
+        </div>
+        <div id="contain">
+            <!-- news-header -->
+            <div style="background-color: #f1f7fa;padding-bottom: 87px;">
+                <div id="menu" style="line-height: 90px;text-align: center;">
+                    <a style="font-size: 18px;margin: 0 2em;color: #FF6000;" href="javacript:;">吉大读报</a>
+                    <a style="font-size: 18px;margin: 0 2em;" href="javacript:;">文章头条</a>
+                    <a style="font-size: 18px;margin: 0 2em;" href="javacript:;">校园头条</a>
+                </div>
+                <!-- news-content-->
+                <div class="container" style="letter-spacing: .5px;background: #fff;">
+                    <div id="content">
+                        <h2>
+                            <span id="date">今天 10月28日</span>
+                            <span id="week">星期日</span>
+                        </h2>
+                        <ol style="padding: 0 0 80px;margin-left: 0px;" id="content-list">
+                            <li>
+                                <h3><strong>1.</strong>本周热门文章：《官方揭秘！2018 双十一品牌设计全过程》</h3>
+                                <p style="max-width: 750px;float: left;margin: 0;width: 76%;color: #606060;font-size: 16px;line-height: 30px;color: #6f6f6f;">仅从一个
+                                    Logo 来解读品牌，总有「管中窥豹，时见一斑」之嫌，所以我们将还原天猫双11十周年品牌设计背后的思考，原汁原味的为大家解读品牌设计背后的心路历程。</p>
+                                <div style="width: 22.4%;float: right;">
+                                    <img src="images/jidadubao/db-20181028.jpg" />
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div id="content">
+                        <ol style="padding: 0 0 80px;margin-left: 0px;" id="content-list">
+                            <li>
+                                <h3><strong>2.</strong>本周热门神器：60 套优质 PPT 素材免费打包下载！</h3>
+                                <p style="max-width: 750px;float: left;margin: 0;width: 76%;color: #606060;font-size: 16px;line-height: 30px;color: #6f6f6f;">本周热门神器：60
+                                    套优质 PPT 素材免费打包下载！ 今天给大家带来60 套 PPT 模板，帮助你提高效率；不仅可以用于会议、个人简历等展示，还能积累学习排版、配色等设计知识。</p>
+                                <div style="width: 22.4%;float: right;">
+                                    <img src="images/jidadubao/db-20181028-1.jpg" />
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div id="content">
+                        <h2>
+                            <span id="date">今天 10月27日</span>
+                            <span id="week">星期六</span>
+                        </h2>
+                        <ol style="padding: 0 0 80px;margin-left: 0px;" id="content-list">
+                            <li>
+                                <h3><strong>1.</strong>《荒野大镖客 救赎 2》正式发售，大获好评</h3>
+                                <p style="max-width: 750px;float: left;margin: 0;width: 76%;color: #606060;font-size: 16px;line-height: 30px;color: #6f6f6f;">这款由Rockstar
+                                    花费 7 年时间，开发资源比《侠盗猎车手 5》高 3 倍，光故事剧本厚达 2000 页的游戏刚刚发售，就预定了2018 年年度最佳游戏。设计师们周末在家可以玩起来了！</p>
+                                <div style="width: 22.4%;float: right;">
+                                    <img src="images/jidadubao/db-20181027-1.jpg" />
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div id="content">
+                        <ol style="padding: 0 0 80px;margin-left: 0px;" id="content-list">
+                            <li>
+                                <h3><strong>2.</strong>Figma 现在可以导入到 Principle 了！</h3>
+                                <p style="max-width: 750px;float: left;margin: 0;width: 76%;color: #606060;font-size: 16px;line-height: 30px;color: #6f6f6f;">设计软件Figma
+                                    刚刚推出了新的集成工具，可以将Figma 的设计导入到Principle 中，方便设计师在原型中添加高级动画。</p>
+                                <div style="width: 22.4%;float: right;">
+                                    <img src="images/jidadubao/db-20181024-1.png" />
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div id="content">
+                        <h2>
+                            <span id="date">今天 10月26日</span>
+                            <span id="week">星期五</span>
+                        </h2>
+                        <ol style="padding: 0 0 80px;margin-left: 0px;" id="content-list">
+                            <li>
+                                <h3><strong>1.</strong>腾讯QQ的「嘀嘀嘀」消息通知声音以后不能随便用了</h3>
+                                <p style="max-width: 750px;float: left;margin: 0;width: 76%;color: #606060;font-size: 16px;line-height: 30px;color: #6f6f6f;">还记得以前QQ
+                                    一有消息来，就发出的「嘀嘀嘀」声音吗？近日司法确认这个独特的声音归腾讯所有，具备知识产权。
+                                </p>
+                                <div style="width: 22.4%;float: right;">
+                                    <img src="images/jidadubao/db-20181026.jpg" />
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div id="content">
+                        <ol style="padding: 0 0 80px;margin-left: 0px;" id="content-list">
+                            <li>
+                                <h3><strong>2.</strong>微信朋友圈广告@好友评论互动功能上线了！</h3>
+                                <p style="max-width: 750px;float: left;margin: 0;width: 76%;color: #606060;font-size: 16px;line-height: 30px;color: #6f6f6f;">微信朋友圈广告@好友评论互动功能上线了
+                                    5
+                                    在使用@好友评论互动功能的朋友圈广告中，用户可以在评论区点击评论框左侧的“@”符号，直接@微信通讯录里的好友，与好友实时“畅聊”。这将会显著提高广告的社交传播价值，激发用户互动热情。
+                                </p>
+                                <div style="width: 22.4%;float: right;">
+                                    <img src="images/jidadubao/db-20181026-1.jpeg" />
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" style="padding-top: 15px;background-color: #353535; ">
+            <div id="footer-first">
+                <div id="footer-inner">
+                    <div id="footer-inner-block" style="padding-left: 0; ">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">关于我们</h2>
+                        </div>
+                        <div style=" font-size: 12px;line-height: 1.68;list-style: none;padding: 0;margin: 0;color: #8a8a8a; ">
+                            <p>优设网（uisdc.com）是国内人气最高的设计师学习平台。2012年成立至今，一直专注于设计师的学习成长交流。目前正通过网站、微博@优秀网页设计、微信(ID：youshege)、各大社群为设计师提供高水准的行业设计讲座和领先的设计资讯分享。为设计师发声、替好作品说话，是平台的运营理念。想更全面了解优设或联系我们合作，欢迎访问“关于我们”</p>
+                        </div>
+                    </div>
+                    <div id="footer-inner-block">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">我们的团队</h2>
+                        </div>
+                        <div>
+                            <ul id="footUl">
+                                <li>
+                                    <img src="img/team1zp.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team2cz.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team3sl.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team4wz.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team5yy.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team6xl.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team1-xy.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team1-zm.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team9xy.jpg " />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="footer-inner-block">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">大家在关注</h2>
+                        </div>
+                        <div style=" font-size: 12px;line-height: 1.68;list-style: none;color: #8a8a8a; ">
+                            <ul style="list-style: none;padding-left: 0px; ">
+                                <li>经验分享</li>
+                                <li>网页设计</li>
+                                <li>PS教程</li>
+                                <li>酷站</li>
+                                <li>ps技巧</li>
+                                <li>用户体验</li>
+                                <li>优秀网页设计</li>
+                                <li>设计师职场</li>
+                                <li>ui设计</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="footer-inner-block">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">优设微信</h2>
+                        </div>
+                        <div>
+                            <img src="img/2016-gwweixin-bottom.png " />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-two" style="background: black; ">
+                <div id="footer-inner">
+                    <div style="padding: 40px 0 0;text-align: center;">
+                        <p style="margin-bottom: 15px;font-size: 12px; ">广告合作&nbsp;&nbsp;&nbsp;免责声明&nbsp;&nbsp;&nbsp;友情链接&nbsp;&nbsp;&nbsp;联系我们&nbsp;&nbsp;&nbsp;关于我们&nbsp;&nbsp;&nbsp;@优秀网页设计</p>
+                        <p style="font-size: 12px; ">Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2018&nbsp;&nbsp;优设-UISDC&nbsp;&nbsp;-&nbsp;&nbsp;优设网官方微信号：youshege&nbsp;&nbsp;-&nbsp;&nbsp;鄂ICP备16005435号-1</p><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="js/jquery-3.1.1.min.js "></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script>
+        $(function() {
+            $('#myCarousel').carousel('cycle', {
+                interval: 0
+            });
+        });
+        $(function() {
+            var time = new Date();
+            var year = time.getFullYear();
+            var month = time.getMonth() + 1;
+            var date = time.getDate();
+            var day = time.getDay();
+            var weeks = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+            var week = weeks[day];
+            var hour = time.getHours();
+            var greet;
+            if (hour >= 0 && hour < 12) {
+                var greet = "早上好";
+            } else if (hour >= 12 && hour < 18) {
+                var greet = "下午好"
+            } else if (hour >= 18 && hour < 24) {
+                var greet = "晚上好"
+            }
+            $("#showtime").html(greet + ",现在是" + year + "年" + month + "月" + date + "日" + " " + week)
+        })
+    </script>
+</html>

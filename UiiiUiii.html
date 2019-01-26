@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>仅用于学习-UiiiUiii</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <style>
+            img {
+                width: 100%
+            }
+
+            #content-list {
+                height: 50px;
+                background: #f5f5f5;
+                padding: 12px 10px
+            }
+
+            #content-list h4 {
+                padding-left: 5px;
+                font-size: 14px;
+                margin: 10px;
+            }
+
+            #footer-inner {
+                max-width: 1170px;
+                padding-bottom: 20px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+
+            #footer-inner-block {
+                width: 25%;
+                height: 242px;
+                padding: 0 40px;
+                float: left;
+                position: relative;
+                overflow: hidden;
+                box-sizing: border-box;
+                padding-left: 0px;
+            }
+
+            #footUl {
+                list-style: none;
+                padding-left: 0px;
+            }
+
+            #footUl li {
+                margin: 6px;
+                float: left;
+                text-align: center;
+            }
+
+            #daohang {
+                height: 57px;
+            }
+
+            #daohang li {
+                height: 57px;
+                margin-left: 22px;
+            }
+
+            #daohang li a {
+                height: 57px;
+                padding-top: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="background-color:#f2f2f2;height: 32px;">
+            <div class="container">
+                <ol class="breadcrumb" style="font-size: 11px;background-color: #f2f2f2;">
+                    <li class="active">
+                        欢迎来到吉大设计联盟&nbsp;&nbsp;/&nbsp;&nbsp;<span id="showtime"></span>
+                    </li>
+                </ol>
+                <div style="position: absolute;right: 370px;top: 0;font-size: 11px;">
+                    <ol class="breadcrumb" style="background-color: #f2f2f2;">
+                        <li>
+                            <a href="login.html">请登录</a>
+                        </li>
+                        <li>
+                            <a href="register.html">免费注册</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="header" style="width: 100%;height: 57px; background: #fff;z-index: auto;">
+            <nav class="navbar navbar-default" style="background: #fff;margin-bottom: 0px;height: 57px;">
+                <div class="container" style="height: 57px;">
+                    <div class="navbar-header" style="">
+                        <div style="width: 160px;height: 57px;z-index: 10;display: block;">
+                            <a style="display: block;width: 160px;height: 57px;text-align: center;line-height: 57px;">
+                                <img src="images/background-image/logo.png" style="width: 68px;height: 42px;" />
+                                <font style="font-family: 'Dosis', sans-serif;">吉大设计联盟</font>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <div style="height: 57px;">
+                            <ul class="nav navbar-nav" id="daohang">
+                                <li>
+                                    <a href="index.html">首页</a>
+                                </li>
+                                <li>
+                                    <a href="article.html">文章</a>
+                                </li>
+                                <li>
+                                    <a href="xijielieren.html">细节猎人</a>
+                                </li>
+                                <li>
+                                    <a href="jidadubao.html">吉大读报</a>
+                                </li>
+                                <li>
+                                    <a href="UiiiUiii.html" style="border-bottom:  5px solid #ff6000;">
+                                        <p style="color: #ff6000;">UiiiUiii课程</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mianfeisucai.html">免费教程</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+        <div style="padding: 50px 0 10px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-xs-9">
+                        <div id="myCarousel" class="carousel slide" style="height: 358px;">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="images/uiiiuiii/uiii-banner-181023.jpg">
+                                    <div class="carousel-caption">设计感十足的创意插画临摹思路</div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/uiiiuiii/uiii-bbanner-181013.jpg" alt="Second slide">
+                                </div>
+                                <div class="item">
+                                    <img src="images/uiiiuiii/uiii-banner-1809302.jpg" alt="Third slide">
+                                    <div class="carousel-caption">PX AI AE零基础训练营火热招生</div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <div style="width: 265px;border: 1px solid #eee;letter-spacing: 1px;">
+                            <h2 style="font-size: 16px;line-height: 1;padding: 13px 0 14px;margin: 0;font-weight: bold;background: #fbfbfb;text-align: center;border-bottom: 1px solid #f0f0f0;">UiiUii热门频道</h2>
+                            <ul style="list-style: none;">
+                                <li style="margin-top: 20px;"><img src="images/uiii-ps-icon.png" style="width: 45px;float: left;" />
+                                    <h3 style="font-size: 16px;font-weight: bold;margin: 0 0 7px 60px;line-height: 1;">PhotoShop</h3>
+                                    <h4 style="font-size: 14px;margin: 0 0 7px 60px;line-height: 1;">PS新手入门</h4>
+                                    <p style="margin: 0 0 7px 60px;color: #bbb;line-height: 1;font-size: 12px;">设计师必学神器</p>
+                                </li>
+                                <li style="margin-top: 20px;"><img src="images/uiii-ai-icon.png" style="width: 45px;float: left;" />
+                                    <h3 style="font-size: 16px;font-weight: bold;margin: 0 0 7px 60px;line-height: 1;">Illustrator</h3>
+                                    <h4 style="font-size: 14px;margin: 0 0 7px 60px;line-height: 1;">AI新手入门</h4>
+                                    <p style="margin: 0 0 7px 60px;color: #bbb;line-height: 1;font-size: 12px;">矢量绘图小能手</p>
+                                </li>
+                                <li style="margin-top: 20px;"><img src="images/uiii-ae-icon.png" style="width: 45px;float: left;" />
+                                    <h3 style="font-size: 16px;font-weight: bold;margin: 0 0 7px 60px;line-height: 1;">After
+                                        Effects</h3>
+                                    <h4 style="font-size: 14px;margin: 0 0 7px 60px;line-height: 1;">AE新手入门</h4>
+                                    <p style="margin: 0 0 7px 60px;color: #bbb;line-height: 1;font-size: 12px;">动效设计不再难</p>
+                                </li>
+                                <li style="margin-top: 20px;"><img src="images/uiii-c4d-icon.png" style="width: 45px;float: left;" />
+                                    <h3 style="font-size: 16px;font-weight: bold;margin: 0 0 7px 60px;line-height: 1;">Cinema
+                                        4D</h3>
+                                    <h4 style="font-size: 14px;margin: 0 0 7px 60px;line-height: 1;">C4D入门</h4>
+                                    <p style="margin: 0 0 7px 60px;color: #bbb;line-height: 1;font-size: 12px;">2018最火软件</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 30px;">
+            <div class="row">
+                <div class="col-md-3 col-xs-3" style="padding: 0px;" id="rank_c">
+                    <div style="border: 1px solid #eee;border-right: none;background: #fbfbfb;line-height: 1;">
+                        <div style="color: #525252;display: block;padding: 13px 20px;">
+                            <div style="width: 45px;height: 45px;background: url(images/uiiiuiii/rank_c.png) no-repeat 0 0;background-size: 100%;float: left;margin: 3px 16px 0 5px;"
+                                id="rank_c_c"></div>
+                            <h3 style="font-size: 18px;line-height: 1;margin: 10px 0;">灵感频道</h3>
+                            <p style="font-size: 12px;">每天都有新的设计</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-3" style="padding: 0px;" id="rank_a">
+                    <div style="border: 1px solid #eee;border-right: none;background: #fbfbfb;line-height: 1;">
+                        <div style="color: #525252;display: block;padding: 13px 20px;">
+                            <div style="width: 45px;height: 45px;background: url(images/uiiiuiii/rank_a.png) no-repeat 0 0;background-size: 100%;float: left;margin: 3px 16px 0 5px;"
+                                id="rank_a_a"></div>
+                            <h3 style="font-size: 18px;line-height: 1;margin: 10px 0;">教程排行榜</h3>
+                            <p style="font-size: 12px;">优质中文教学伴你成长</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-3" style="padding: 0px;" id="rank_b">
+                    <div style="border: 1px solid #eee;border-right: none;background: #fbfbfb;line-height: 1;">
+                        <div style="color: #525252;display: block;padding: 13px 20px;">
+                            <div style="width: 45px;height: 45px;background: url(images/uiiiuiii/rank_b.png) no-repeat 0 0;background-size: 100%;float: left;margin: 3px 16px 0 5px;"
+                                id="rank_b_b"></div>
+                            <h3 style="font-size: 18px;line-height: 1;margin: 10px 0;">软件排行榜</h3>
+                            <p style="font-size: 12px;">设计神器让你更高效</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-3" style="padding: 0px;" id="rank_4">
+                    <div style="border: 1px solid #61c408;border-right: none;background: #61c408;line-height: 1;">
+                        <div style="color: #525252;display: block;padding: 13px 20px;">
+                            <div style="width: 45px;height: 45px;background: url(images/uiiiuiii/rank_4.png) no-repeat 0 0;background-size: 100%;float: left;margin: 3px 16px 0 5px;"
+                                id="rank_4_4"></div>
+                            <h3 style="font-size: 18px;line-height: 1;margin: 10px 0;">热门软件自学</h3>
+                            <p style="font-size: 12px;">零基础知识树系列</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="container" style="margin-top: 40px;">
+                <!--第一行 -->
+                <div class="row">
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/Cinabadon-1028-thch-167.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>优设基础训练营</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>AI教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                AI教程！详细步骤教你绘制2.5D童话风格建筑插画
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/xhdz-1028-id-5.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>小胡舵主</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>AI教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                【Indesign入门篇】NO.5 字符功能与字符样式
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/eilin-1027-scmg-2.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>糖糖糖就是糖</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>AI教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                水彩教程！教你绘制一朵水润的温柔玫瑰
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/syjs-1027-mlds-2.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>优设微博</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>AI教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                摄影后期！7分钟学会ins上最火的“莫兰迪绿”高级调色
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!--第二行 -->
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/smx-1026-nwbp-28.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>优设基础训练营</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>PS教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                PS教程！教你绘制拟物仪表盘拟物图标
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/qdly-1026-dhlr-5.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>优设微博</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>手绘教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                板绘教程！15分钟解说原创立绘的诞生过程之月饼拟人
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/xhei-1025-mopi-3.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>优设微博</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>PS教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                PS教程！教你如何利用双曲线进行高质感磨皮（附插件）
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/bf-1024-fjch-2.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>优设基础训练营</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>AI教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                Ai+Ps教程！教你绘制扁平化山林场景噪点插画
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!--第三行 -->
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/xhdz-1025-bs.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>杨洋XHM</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>其他教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                笔刷下载！水+火+烟精选笔刷包
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/seven-1024-sbzz-2.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>第七夜</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>PS教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                PS教程！书本装帧与内页设计过程心得分享
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/baoda-1023-ae2019-01.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>包大有趣</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>AE教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                AE CC 2019 新功能大盘点！Adobe爸爸更新了哪些实用功能？
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/yuyin-1023-byzy-20.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>优设基础训练营</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>AI教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                AI+PS教程！教你绘制异国风情午后阳光小巷插画
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!--第四行 -->
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/xhdz-1022-id-banner.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>小胡舵主</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>其他教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                【INDESIGN入门篇】NO .4 文本置入、串接与框架
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/zhang-1022-cjchfm-1.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>优设基础训练营</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>AI教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                AI教程！教你绘制扁平风格渐变场景插画
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/sni-1021-xhbj-48.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>优设基础训练营</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>AI教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                AI教程！教你制作漂亮的冬季雪花平铺背景
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/meiia-1021-pscp-24.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>你丫才美工</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>Mac+Win</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                PS更新啦！史上最骚PS版本测评
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!--第五行 -->
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/20181020-aicc2019cp-hg-ssp.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>HE毛蛋</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>AI教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                AI测评！揭秘Adobe Illustrator CC 2019的神秘面纱
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/sxy-1022-scch-4.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>水汐珩</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>手绘教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                手绘教程！教你绘制水彩肌理效果的花卉！
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/02/rr-0230-ziti-1.jpg" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>你丫才美工</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>Mac+Win</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                设计神器Font in Use！字体选择恐惧症？这个网站能帮你！
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="https://images.uiiiuiii.com/wp-content/uploads/2018/10/sn-1018-nhd-1.gif" />
+                        <div id="content-list">
+                            <div style="float: left;">
+                                <h4>优设基础训练营</h4>
+                            </div>
+                            <div style="float: right;">
+                                <h4>AE教程</h4>
+                            </div>
+                        </div>
+                        <div style="color: #616161;">
+                            <h2 style="font-weight: normal;font-size: 16px;">
+                                AE教程！4分钟学会制作闪烁的霓虹灯字效（含素材包下载）
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="tuijianteacher" style="margin-top: 40px;">
+            <div class="container">
+                <div style="text-align: center">
+                    <h3 style="font-size: 30px;font-weight: 700;">推荐设计师</h3>
+                    <p style="color: #fb5008;padding: 4px 8px 4px 5px;font-size: 14px;">查看热榜</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                        <div>
+                            <img style="width: 200px;height: 200px;" src="https://images.uiiiuiii.com/wp-content/uploads/2018/05/rr-0512-tx-1.jpg" />
+                            <div style="float: right;margin-right: 55px;">
+                                <p style="font-size: 18px;margin: 0 0 3px;font-weight: 700;">如如</p>
+                                <p style="font-size: 12px;font-weight: 700;color: #969696;text-transform: uppercase;">优设基础训练营讲师
+                                    设计美学博主</p>
+                                <p style="margin: 14px 0 25px;">怕什么真理无穷，进一寸有进一寸的欢喜。</p>
+                                <a style="margin-top:20px;padding: 10px 25px;background: #eee;">
+                                    <font style="color: #666;">查看资料</font>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <div>
+                            <img style="width: 200px;height: 200px;" src="https://uiiiuiii.com/wp-content/uploads/2017/05/fz-0520-zp-1.jpg" />
+                            <div style="float: right;margin-right: 210px;">
+                                <p style="font-size: 18px;margin: 0 0 3px;font-weight: 700;">小胡舵主</p>
+                                <p style="font-size: 12px;font-weight: 700;color: #969696;text-transform: uppercase;">优设基础训练营讲师</p>
+                                <p style="margin: 14px 0 25px;">不能再胖的肥子</p>
+                                <a style="margin-top:20px;padding: 10px 25px;background: #eee;">
+                                    <font style="color: #666;">查看资料</font>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-md-6 col-xs-6">
+                        <div>
+                            <img style="width: 200px;height: 200px;" src="https://images.uiiiuiii.com/wp-content/uploads/2017/07/meiia-719.jpg" />
+                            <div style="float: right;margin-right: 135px;">
+                                <p style="font-size: 18px;margin: 0 0 3px;font-weight: 700;">你丫才美工</p>
+                                <p style="font-size: 12px;font-weight: 700;color: #969696;text-transform: uppercase;">大概是网红~吧</p>
+                                <p style="margin: 14px 0 25px;">设计圈最会写段子的美丫姐。</p>
+                                <a style="margin-top:20px;padding: 10px 25px;background: #eee;">
+                                    <font style="color: #666;">查看资料</font>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <div>
+                            <img style="width: 200px;height: 200px;" src="https://images.uiiiuiii.com/wp-content/uploads/2018/04/uiii-ywcm-410.jpg" />
+                            <div style="float: right;margin-right: 165px;">
+                                <p style="font-size: 18px;margin: 0 0 3px;font-weight: 700;">鱼丸粗面</p>
+                                <p style="font-size: 12px;font-weight: 700;color: #969696;text-transform: uppercase;">优设零基础手绘班毕业学员</p>
+                                <p style="margin: 14px 0 25px;">用画笔画出心中的世界~</p>
+                                <a style="margin-top:20px;padding: 10px 25px;background: #eee;">
+                                    <font style="color: #666;">查看资料</font>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 40px;text-align:center;margin-bottom: 50px;">
+                    <a style="padding: 12px 45px;color: #fff;background-color: #61c408;border-color: #61c408;">更多设计师</a>
+                </div>
+            </div>
+        </div>
+        <div id="footer" style="padding-top: 15px;background-color: #353535; ">
+            <div id="footer-first">
+                <div id="footer-inner">
+                    <div id="footer-inner-block" style="padding-left: 0; ">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">关于我们</h2>
+                        </div>
+                        <div style=" font-size: 12px;line-height: 1.68;list-style: none;padding: 0;margin: 0;color: #8a8a8a; ">
+                            <p>优设网（uisdc.com）是国内人气最高的设计师学习平台。2012年成立至今，一直专注于设计师的学习成长交流。目前正通过网站、微博@优秀网页设计、微信(ID：youshege)、各大社群为设计师提供高水准的行业设计讲座和领先的设计资讯分享。为设计师发声、替好作品说话，是平台的运营理念。想更全面了解优设或联系我们合作，欢迎访问“关于我们”</p>
+                        </div>
+                    </div>
+                    <div id="footer-inner-block">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">我们的团队</h2>
+                        </div>
+                        <div>
+                            <ul id="footUl">
+                                <li>
+                                    <img src="img/team1zp.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team2cz.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team3sl.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team4wz.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team5yy.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team6xl.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team1-xy.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team1-zm.jpg " />
+                                </li>
+                                <li>
+                                    <img src="img/team9xy.jpg " />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="footer-inner-block">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">大家在关注</h2>
+                        </div>
+                        <div style=" font-size: 12px;line-height: 1.68;list-style: none;color: #8a8a8a; ">
+                            <ul style="list-style: none;padding-left: 0px; ">
+                                <li>经验分享</li>
+                                <li>网页设计</li>
+                                <li>PS教程</li>
+                                <li>酷站</li>
+                                <li>ps技巧</li>
+                                <li>用户体验</li>
+                                <li>优秀网页设计</li>
+                                <li>设计师职场</li>
+                                <li>ui设计</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="footer-inner-block">
+                        <div>
+                            <h2 style="color: #bebdbd;font-size: 14px;margin-bottom: 20px;text-shadow: 1px 1px 0 #000; ">优设微信</h2>
+                        </div>
+                        <div>
+                            <img src="img/2016-gwweixin-bottom.png " />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-two" style="background: black; ">
+                <div id="footer-inner">
+                    <div style="padding: 40px 0 0;text-align: center;">
+                        <p style="margin-bottom: 15px;font-size: 12px; ">广告合作&nbsp;&nbsp;&nbsp;免责声明&nbsp;&nbsp;&nbsp;友情链接&nbsp;&nbsp;&nbsp;联系我们&nbsp;&nbsp;&nbsp;关于我们&nbsp;&nbsp;&nbsp;@优秀网页设计</p>
+                        <p style="font-size: 12px; ">Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2018&nbsp;&nbsp;优设-UISDC&nbsp;&nbsp;-&nbsp;&nbsp;优设网官方微信号：youshege&nbsp;&nbsp;-&nbsp;&nbsp;鄂ICP备16005435号-1</p><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="js/jquery-3.1.1.min.js "></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script>
+        $(function() {
+            $('#myCarousel').carousel('cycle', {
+                interval: 0
+            });
+        });
+        $(function() {
+            var time = new Date();
+            var year = time.getFullYear();
+            var month = time.getMonth() + 1;
+            var date = time.getDate();
+            var day = time.getDay();
+            var weeks = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+            var week = weeks[day];
+            var hour = time.getHours();
+            var greet;
+            if (hour >= 0 && hour < 12) {
+                var greet = "早上好";
+            } else if (hour >= 12 && hour < 18) {
+                var greet = "下午好"
+            } else if (hour >= 18 && hour < 24) {
+                var greet = "晚上好"
+            }
+            $("#showtime").html(greet + ",现在是" + year + "年" + month + "月" + date + "日" + " " + week)
+        })
+
+        $(function() {
+            $("#rank_a").mousemove(function() {
+                $("#rank_a_a").css({
+                    "width": "45px",
+                    "height": "45px",
+                    "background": "url(images/uiiiuiii/rank_a.png) no-repeat 0 -45px",
+                    "background-size": "100%",
+                    "float": "left",
+                    "margin": "3px 16px 0 5px"
+                });
+            })
+             $("#rank_a").mouseleave(function() {
+                $("#rank_a_a").css({
+                    "width": "45px",
+                    "height": "45px",
+                    "background": "url(images/uiiiuiii/rank_a.png) no-repeat 0 0px",
+                    "background-size": "100%",
+                    "float": "left",
+                    "margin": "3px 16px 0 5px"
+                });
+            })
+             $("#rank_b").mousemove(function() {
+                $("#rank_b_b").css({
+                    "width": "45px",
+                    "height": "45px",
+                    "background": "url(images/uiiiuiii/rank_b.png) no-repeat 0 -45px",
+                    "background-size": "100%",
+                    "float": "left",
+                    "margin": "3px 16px 0 5px"
+                });
+            })
+             $("#rank_b").mouseleave(function() {
+                $("#rank_b_b").css({
+                    "width": "45px",
+                    "height": "45px",
+                    "background": "url(images/uiiiuiii/rank_b.png) no-repeat 0 0px",
+                    "background-size": "100%",
+                    "float": "left",
+                    "margin": "3px 16px 0 5px"
+                });
+            })
+             $("#rank_c").mousemove(function() {
+                $("#rank_c_c").css({
+                    "width": "45px",
+                    "height": "45px",
+                    "background": "url(images/uiiiuiii/rank_c.png) no-repeat 0 -45px",
+                    "background-size": "100%",
+                    "float": "left",
+                    "margin": "3px 16px 0 5px"
+                });
+            })
+             $("#rank_c").mouseleave(function() {
+                $("#rank_c_c").css({
+                    "width": "45px",
+                    "height": "45px",
+                    "background": "url(images/uiiiuiii/rank_c.png) no-repeat 0 0px",
+                    "background-size": "100%",
+                    "float": "left",
+                    "margin": "3px 16px 0 5px"
+                });
+            })
+        })
+        
+        $(function(){
+           
+        })
+    </script>
+
+</html>

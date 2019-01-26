@@ -1,0 +1,86 @@
+body {
+	text-align: left;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	color: #555;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.header {
+	margin: 0 auto;
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3)
+}
+
+.login h1 {
+	font-size: 2em;
+	display: block;
+	font-family: 'Dosis', sans-serif;
+	margin: 0;
+	font-size: 20px
+}
+
+.login h1 a {
+	color: #FFFFFF;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 61px;
+}
+
+.login h1 span {
+	color: #00acee;
+	font-size: 1.5em;
+}
+
+.login h1 p {
+	color: #ffcc33;
+	line-height: 1px;
+	text-align: right;
+	font-weight: 600;
+	letter-spacing: 4px;
+	margin-top: -11px;
+	font-size: 0.3em;
+}
+
+#login-lunbo div img {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	width: 1519px;
+	height: 927.282px;
+	max-width: none;
+	z-index: --1;
+	left: 0px;
+	top: -274.141px;
+}
+
+.login-from {
+	padding: 20px 50px 40px 50px;
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+	margin: 0 0 20px;
+}
+
+.login-from h2 {
+	margin-bottom: 25px;
+	padding-bottom: 15px;
+	border-bottom: 2px dotted #bbb;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+}
+
+
+.font-register {
+	display: block;
+	font-size: 29px;
+	font-weight: 700;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.login-from label {
+	margin: 7px 0 10px 5px;
+	font-size: 16px;
+	text-align: left;
+}
